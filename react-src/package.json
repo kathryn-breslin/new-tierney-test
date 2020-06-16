@@ -3,12 +3,15 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "@devloco\/react-scripts-wptheme": "3.4.1-wp.1",
-        "@testing-library\/jest-dom": "^4.2.4",
-        "@testing-library\/react": "^9.5.0",
-        "@testing-library\/user-event": "^7.2.1",
+        "@devloco/react-scripts-wptheme": "3.4.1-wp.1",
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.5.0",
+        "@testing-library/user-event": "^7.2.1",
+        "install": "^0.13.0",
+        "npm": "^6.14.5",
         "react": "^16.13.1",
-        "react-dom": "^16.13.1"
+        "react-dom": "^16.13.1",
+        "react-router-dom": "^5.2.0"
     },
     "scripts": {
         "crabuild": "react-scripts build",
@@ -35,6 +38,6 @@
             "last 1 safari version"
         ]
     },
-    "homepage": "\/wp-content\/themes\/new-tierney-test",
-    "browserLaunchTo": "http:\/\/localhost:8888"
+    "homepage": "/wp-content/themes/new-tierney-test",
+    "browserLaunchTo": "http://localhost:8888/"
 }
