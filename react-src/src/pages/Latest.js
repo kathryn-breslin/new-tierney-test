@@ -1,11 +1,13 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 
-const News = (props) => {
+const Latest = (props) => {
     return (
         <div className="Page">
-            <h1>This is the News Page</h1>
+            <Navbar/>
+            <h1>This is the Latest page</h1>
         </div>
     )
 }
 
-export default News; 
+export default Latest; 
