@@ -1,13 +1,23 @@
-import React from "react";
+import React, { Component } from "react";
 import Navbar from "../components/Navbar";
+import axios from "axios";
+class Home extends Component {
 
-const Home = (props) => {
-    return (
-        <div className="Page">
-            <Navbar/>
-            <h1>This is the Home page</h1>
-        </div>
-    )
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            data: []
+        }
+    }
+    render() {
+        return (
+            <div>
+                <Navbar />
+                <h1>Homepage</h1>
+            </div>
+        )
+    }
 }
 
 export default Home; 
