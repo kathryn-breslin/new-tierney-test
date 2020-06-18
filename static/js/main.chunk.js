@@ -110,6 +110,107 @@ function App() {
 
 /***/ }),
 
+/***/ "./src/components/HP-WorkSection.js":
+/*!******************************************!*\
+  !*** ./src/components/HP-WorkSection.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Applications/MAMP/htdocs/wp-content/themes/new-tierney-test/react-src/src/components/HP-WorkSection.js";
+
+
+class HpWorkSection extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  componentDidMount() {
+    this.setWorkSection();
+  }
+
+  setWorkSection() {
+    console.log("Data in work section");
+    console.log(this.props.work);
+  }
+
+  render() {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15,
+        columnNumber: 13
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16,
+        columnNumber: 17
+      }
+    }, "Work Work Work"));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (HpWorkSection);
+
+/***/ }),
+
+/***/ "./src/components/Jumbotron.js":
+/*!*************************************!*\
+  !*** ./src/components/Jumbotron.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return JumboComp; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap/Container */ "./node_modules/react-bootstrap/esm/Container.js");
+/* harmony import */ var react_bootstrap_Jumbotron__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/Jumbotron */ "./node_modules/react-bootstrap/esm/Jumbotron.js");
+var _jsxFileName = "/Applications/MAMP/htdocs/wp-content/themes/new-tierney-test/react-src/src/components/Jumbotron.js";
+
+
+
+function JumboComp() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Jumbotron__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    fluid: true,
+    style: {
+      backgroundColor: 'white',
+      textAlign: 'center',
+      fontFamily: 'Montserrat, sans-serif',
+      fontWeight: '500',
+      fontSize: '200px'
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 21
+    }
+  }, "Hello, we're Tierney."))));
+}
+
+/***/ }),
+
 /***/ "./src/components/Navbar.js":
 /*!**********************************!*\
   !*** ./src/components/Navbar.js ***!
@@ -119,20 +220,22 @@ function App() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Navbar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return NavbarComp; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
 /* harmony import */ var _material_ui_core_Menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Menu */ "./node_modules/@material-ui/core/esm/Menu/index.js");
 /* harmony import */ var _material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/MenuItem */ "./node_modules/@material-ui/core/esm/MenuItem/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 var _jsxFileName = "/Applications/MAMP/htdocs/wp-content/themes/new-tierney-test/react-src/src/components/Navbar.js";
 
 
 
 
 
-function Navbar() {
+
+function NavbarComp() {
   const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
 
   const handleClick = event => {
@@ -147,8 +250,44 @@ function Navbar() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 21,
       columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Navbar"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Navbar"].Brand, {
+    href: "/",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "https://hellotierney.com/wp-content/uploads/2018/04/Layer-1.gif",
+    width: "150",
+    height: "100",
+    className: "d-inline-block align-top",
+    alt: "Tierney logo",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 21
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Nav"], {
+    className: "justify-content-end",
+    activeKey: "/",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
     "aria-controls": "simple-menu",
@@ -157,8 +296,8 @@ function Navbar() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 13
+      lineNumber: 34,
+      columnNumber: 17
     }
   }, "Menu"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Menu__WEBPACK_IMPORTED_MODULE_2__["default"], {
     id: "simple-menu",
@@ -169,118 +308,118 @@ function Navbar() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 13
+      lineNumber: 37,
+      columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
     onClick: handleClose,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 17
+      lineNumber: 44,
+      columnNumber: 21
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
     to: {
       pathname: "/"
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 21
+      lineNumber: 45,
+      columnNumber: 25
     }
   }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
     onClick: handleClose,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 17
+      lineNumber: 49,
+      columnNumber: 21
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
     to: {
       pathname: "/work"
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
-      columnNumber: 21
+      lineNumber: 50,
+      columnNumber: 25
     }
   }, "Work")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
     onClick: handleClose,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 17
+      lineNumber: 54,
+      columnNumber: 21
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
     to: {
       pathname: "/about"
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 21
+      lineNumber: 55,
+      columnNumber: 25
     }
   }, "About")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
     onClick: handleClose,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45,
-      columnNumber: 17
+      lineNumber: 59,
+      columnNumber: 21
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
     to: {
       pathname: "/latest"
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 21
+      lineNumber: 60,
+      columnNumber: 25
     }
   }, "Latest")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
     onClick: handleClose,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 17
+      lineNumber: 64,
+      columnNumber: 21
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
     to: {
       pathname: "/careers"
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 21
+      lineNumber: 65,
+      columnNumber: 25
     }
   }, "Careers")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
     onClick: handleClose,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
-      columnNumber: 17
+      lineNumber: 69,
+      columnNumber: 21
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
     to: {
       pathname: "/contact"
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
-      columnNumber: 21
+      lineNumber: 70,
+      columnNumber: 25
     }
-  }, "Contact"))));
+  }, "Contact")))));
 }
 
 /***/ }),
@@ -487,9 +626,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Navbar */ "./src/components/Navbar.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_Jumbotron__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Jumbotron */ "./src/components/Jumbotron.js");
+/* harmony import */ var _components_HP_WorkSection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/HP-WorkSection */ "./src/components/HP-WorkSection.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Applications/MAMP/htdocs/wp-content/themes/new-tierney-test/react-src/src/pages/Home.js";
+
+
 
 
 
@@ -502,29 +645,52 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     };
   }
 
+  componentDidMount() {
+    axios__WEBPACK_IMPORTED_MODULE_4___default.a.get("https://hellotierney.com/wp-json/acf/v3/work").then(response => response.data).then(dataSet => {
+      this.setState({
+        data: dataSet
+      });
+    });
+  }
+
   render() {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15,
+        lineNumber: 30,
         columnNumber: 13
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16,
+        lineNumber: 31,
         columnNumber: 17
       }
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Jumbotron__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17,
+        lineNumber: 32,
         columnNumber: 17
       }
-    }, "Homepage"));
+    }), this.state.data.map(item => {
+      // {console.log(item)}
+      if (item.acf.featured_post[0] === "featured") {
+        {
+          console.log(item.acf.case_study_hero_client);
+        }
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 41,
+            columnNumber: 29
+          }
+        }, item.acf.case_study_hero_client);
+      }
+    }));
   }
 
 }
@@ -740,5 +906,5 @@ module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/wp-content/th
 
 /***/ })
 
-},[[0,"runtime-main",1]]]);
+},[[0,"runtime-main",0]]]);
 //# sourceMappingURL=main.chunk.js.map

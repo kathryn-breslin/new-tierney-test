@@ -39,7 +39,7 @@
         Learn how to configure a non-root public URL by running `npm run wpbuild`.
     -->
     <title>React WordPress Theme</title>
-<link href="/wp-content/themes/new-tierney-test/static/css/1.chunk.css?683462fc2a90ecedbd8b" rel="stylesheet"><link href="/wp-content/themes/new-tierney-test/static/css/main.chunk.css?683462fc2a90ecedbd8b" rel="stylesheet"></head>
+<link href="/wp-content/themes/new-tierney-test/static/css/0.chunk.css?70908d8fb1e944474cf1" rel="stylesheet"><link href="/wp-content/themes/new-tierney-test/static/css/main.chunk.css?70908d8fb1e944474cf1" rel="stylesheet"></head>
     <body>
     <noscript>
         You need to enable JavaScript to run this app.
@@ -55,5 +55,5 @@
         To begin the development, run `npm run wpstart` or `yarn wpstart`.
         To create a production bundle, use `npm run wpbuild` or `yarn wpbuild`.
     -->
-    <script src="/wp-content/themes/new-tierney-test/static/js/bundle.js?683462fc2a90ecedbd8b"></script><script src="/wp-content/themes/new-tierney-test/static/js/1.chunk.js?683462fc2a90ecedbd8b"></script><script src="/wp-content/themes/new-tierney-test/static/js/main.chunk.js?683462fc2a90ecedbd8b"></script></body>
+    <script src="/wp-content/themes/new-tierney-test/static/js/bundle.js?70908d8fb1e944474cf1"></script><script src="/wp-content/themes/new-tierney-test/static/js/0.chunk.js?70908d8fb1e944474cf1"></script><script src="/wp-content/themes/new-tierney-test/static/js/main.chunk.js?70908d8fb1e944474cf1"></script></body>
 </html>
