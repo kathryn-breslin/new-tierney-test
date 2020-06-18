@@ -38,10 +38,14 @@ class Home extends Component {
                     if(item.acf.featured_post[0] === "featured") {
                         {console.log(item.acf.case_study_hero_client)}
                         return (
-                            <h1>{item.acf.case_study_hero_client}</h1>
+                            <HpWorkSection
+                            client={item.acf.case_study_hero_client}
+                            />
                         )
                     }
+                    
                 })}
+                
 
             </div>
         )
