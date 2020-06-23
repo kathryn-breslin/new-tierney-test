@@ -13,7 +13,8 @@ class Home extends Component {
         super(props);
 
         this.state = {
-            data: []
+            data: [],
+            loaded: false
         }
     }
 
@@ -23,20 +24,17 @@ class Home extends Component {
             .then((response) => response.data)
             .then(dataSet => {
                 this.setState({
-                    data: dataSet
+                    data: dataSet,
+                    loaded: true
                 })
             })
     }
 
-    render() {
-
-        return (
-            <div>
-                <Navbar />
-                <JumboComp />
-
+    loadIcon() {
+        if (this.state.loaded) {
+            return (
+                <>
                     <div className="HpWorkSection" style={{ display: "flex", justifyContent: "center" }}>
-
 
                         {this.state.data.map(item => {
                             if (item.acf.featured_post[0] === "featured") {
@@ -49,15 +47,41 @@ class Home extends Component {
                             }
                         })}
                     </div>
+                </>
 
-                    <div className="HpWorkSection" style={{ float: "right" }}>
-                        <Button variant="outline-info" href="/work">See All</Button>
-                    </div>
+            )
+        }
+        else {
+            return (
+                <>
+                    <img src="https://i.imgur.com/5DrQIHe.gif"/>
 
+                    {/* Using this GIF as a placeholder */}
+                    {/* Image Source: https://imgur.com/gallery/kKc4E */}
+                    {/* All Credit to 'iactuallychangedmyusername' on August 27, 2014 */}
+                </>
+            )
+        }
+    }
+
+    render() {
+
+        return (
+            <div>
+                <Navbar />
+                <JumboComp />
+
+                <div className="HpWorkSection" style={{ display: "flex", justifyContent: "center" }}>
+                    {this.loadIcon()}
+                </div>
+
+                <div className="HpWorkSection" style={{ float: "right" }}>
+                    {this.state.loaded ? <Button variant="outline-info" href="/work">See All</Button> : null }
+                </div>
 
                 <HpMission />
                 <HpFeaturedArticle />
-                <HpFooter/>
+                <HpFooter />
 
             </div>
         )

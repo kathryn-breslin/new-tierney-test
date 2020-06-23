@@ -24,7 +24,7 @@ export default function NavbarComp() {
                     <img
                         src="https://hellotierney.com/wp-content/uploads/2018/04/Layer-1.gif"
                         width="150"
-                        height="100"
+                        // height="100"
                         className="d-inline-block align-top"
                         alt="Tierney logo"
                     />

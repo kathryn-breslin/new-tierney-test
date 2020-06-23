@@ -694,8 +694,7 @@ function FooterComponent() {
     }
   }), "Copyright 2020 Tierney | Privacy & Terms "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "https://hellotierney.com/wp-content/uploads/2018/04/Layer-1.gif",
-    width: "100" // height="100"
-    ,
+    width: "100",
     className: "d-inline-block align-top",
     alt: "Tierney logo",
     style: {
@@ -1015,8 +1014,8 @@ function NavbarComp() {
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "https://hellotierney.com/wp-content/uploads/2018/04/Layer-1.gif",
-    width: "150",
-    height: "100",
+    width: "150" // height="100"
+    ,
     className: "d-inline-block align-top",
     alt: "Tierney logo",
     __self: this,
@@ -1394,16 +1393,59 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   constructor(props) {
     super(props);
     this.state = {
-      data: []
+      data: [],
+      loaded: false
     };
   }
 
   componentDidMount() {
     axios__WEBPACK_IMPORTED_MODULE_8___default.a.get("https://hellotierney.com/wp-json/acf/v3/work").then(response => response.data).then(dataSet => {
       this.setState({
-        data: dataSet
+        data: dataSet,
+        loaded: true
       });
     });
+  }
+
+  loadIcon() {
+    if (this.state.loaded) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "HpWorkSection",
+        style: {
+          display: "flex",
+          justifyContent: "center"
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37,
+          columnNumber: 21
+        }
+      }, this.state.data.map(item => {
+        if (item.acf.featured_post[0] === "featured") {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Elements_WorkSection_HP_WorkSection_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            client: item.acf.case_study_hero_client,
+            client_image: item.acf.case_study_hero_image,
+            __self: this,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 42,
+              columnNumber: 37
+            }
+          });
+        }
+      })));
+    } else {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "https://i.imgur.com/5DrQIHe.gif",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57,
+          columnNumber: 21
+        }
+      }));
+    }
   }
 
   render() {
@@ -1411,21 +1453,21 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34,
+        lineNumber: 70,
         columnNumber: 13
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35,
+        lineNumber: 71,
         columnNumber: 17
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Jumbotron__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36,
+        lineNumber: 72,
         columnNumber: 17
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1437,23 +1479,10 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38,
-        columnNumber: 21
+        lineNumber: 74,
+        columnNumber: 17
       }
-    }, this.state.data.map(item => {
-      if (item.acf.featured_post[0] === "featured") {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Elements_WorkSection_HP_WorkSection_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          client: item.acf.case_study_hero_client,
-          client_image: item.acf.case_study_hero_image,
-          __self: this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 44,
-            columnNumber: 37
-          }
-        });
-      }
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    }, this.loadIcon()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "HpWorkSection",
       style: {
         float: "right"
@@ -1461,37 +1490,37 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53,
-        columnNumber: 21
+        lineNumber: 78,
+        columnNumber: 17
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }, this.state.loaded ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
       variant: "outline-info",
       href: "/work",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54,
-        columnNumber: 25
+        lineNumber: 79,
+        columnNumber: 42
       }
-    }, "See All")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Elements_MissionStatement_HP_Mission_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    }, "See All") : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Elements_MissionStatement_HP_Mission_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58,
+        lineNumber: 82,
         columnNumber: 17
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Elements_FeaturedArticle_HP_FeaturedArticle_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59,
+        lineNumber: 83,
         columnNumber: 17
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Elements_Footer_HpFooter_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 60,
+        lineNumber: 84,
         columnNumber: 17
       }
     }));

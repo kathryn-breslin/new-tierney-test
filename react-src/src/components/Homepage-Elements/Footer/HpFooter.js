@@ -84,7 +84,6 @@ export default function FooterComponent() {
                             <img
                                 src="https://hellotierney.com/wp-content/uploads/2018/04/Layer-1.gif"
                                 width="100"
-                                // height="100"
                                 className="d-inline-block align-top"
                                 alt="Tierney logo"
                                 style={{ display: "inline-block", marginLeft: "10px", marginTop: "-5px" }}></img>                     
