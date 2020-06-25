@@ -34,19 +34,21 @@ class Home extends Component {
         if (this.state.loaded) {
             return (
                 <>
-                    <div className="HpWorkSection" style={{ display: "flex", justifyContent: "center" }}>
+                    {/* <div className="HpWorkSection" style={{ display: "flex", justifyContent: "center" }}> */}
 
-                        {this.state.data.map(item => {
-                            if (item.acf.featured_post[0] === "featured") {
-                                return (
-                                    <HpWorkSection
-                                        client={item.acf.case_study_hero_client}
-                                        client_image={item.acf.case_study_hero_image}
-                                    />
-                                )
-                            }
-                        })}
-                    </div>
+                    {this.state.data.map(item => {
+                        if (item.acf.featured_post[0] === "featured") {
+                            return (
+                                <HpWorkSection
+                                    client={item.acf.case_study_hero_client}
+                                    client_image={item.acf.case_study_hero_image}
+                                    id={item.index}
+                                    key={item.index}
+                                />
+                            )
+                        }
+                    })}
+                    {/* </div> */}
                 </>
 
             )
@@ -54,7 +56,7 @@ class Home extends Component {
         else {
             return (
                 <>
-                    <img src="https://i.imgur.com/5DrQIHe.gif"/>
+                    <img src="https://i.imgur.com/5DrQIHe.gif" />
 
                     {/* Using this GIF as a placeholder */}
                     {/* Image Source: https://imgur.com/gallery/kKc4E */}
@@ -71,12 +73,14 @@ class Home extends Component {
                 <Navbar />
                 <JumboComp />
 
-                <div className="HpWorkSection" style={{ display: "flex", justifyContent: "center" }}>
+                <div className="HpWorkSection" style={{ textAlign: "center" }}>
                     {this.loadIcon()}
-                </div>
+                    <br />
 
-                <div className="HpWorkSection" style={{ float: "right" }}>
-                    {this.state.loaded ? <Button variant="outline-info" href="/work">See All</Button> : null }
+                    <div className="HpWorkSectionBtn">
+                        {this.state.loaded ? <Button style={{ alignContent: "right", marginRight: "-1300px", marginTop: "20px"}} variant="outline-info" href="/work">See All</Button> : null}
+                    </div>
+
                 </div>
 
                 <HpMission />
