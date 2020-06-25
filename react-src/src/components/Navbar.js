@@ -8,32 +8,53 @@ import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import AddIcon from '@material-ui/icons/Add';
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
     list: {
-        width: 800, 
+        marginTop: 40,
+        width: 800,
         fontFamily: 'Montserrat, sans-serif',
-        fontWeight: 400,
-        fontSize: 80,
-        ['@media (min-width: 768px) and (max-width: 992px)']: { 
-            width: 400,
+        fontWeight: 700,
+        paddingLeft: 40,
+        fontSize: 60,
+        ['@media (min-width: 768px) and (max-width: 992px)']: {
+            width: 500,
         },
-        ['@media (min-width: 576px) and (max-width: 768px)']: { 
+        ['@media (min-width: 576px) and (max-width: 768px)']: {
             width: 400,
+            fontSize: 60,
         },
-        ['@media (min-width: 200px) and (max-width: 576px)']: { 
+        ['@media (min-width: 200px) and (max-width: 576px)']: {
             width: 200,
-        } 
+            fontSize: 40,
+        }
     },
     listItem: {
         '&:hover': {
-            background: "#f00",
-         }
+            paddingLeft: "70px",
+            backgroundColor: "white",
+            // color: "#DB2416"
+            showArrow: {
+                visibility: "visible", 
+                color: "#DB2416"           
+            }
+        }
     },
     fullList: {
         width: '100%',
+    },
+    menu: {
+        fontFamily: 'Montserrat, sans-serif',
+        fontWeight: 700,
+        fontSize: 20,
+    '&:hover': {
+        backgroundColor: "white",
+        color: "#DB2416"
     }
+}
 });
 
 export default function NavbarComp() {
@@ -64,42 +85,52 @@ export default function NavbarComp() {
         >
             <List>
                 <ListItem className={classes.listItem} button>
-                    <Link style={{textDecoration: "none", color: "inherit"}} to={{
+                    <Link style={{ textDecoration: "none", color: "inherit" }} to={{
                         pathname: "/"
-                    }}>Home</Link>
+                    }}>Home <ArrowForwardIosIcon className={classes.showArrow} /> </Link>
                 </ListItem>
-                <ListItem  className={classes.listItem} button>
-                    <Link style={{textDecoration: "none", color: "inherit"}} to={{
+                <ListItem className={classes.listItem} button>
+                    <Link style={{ textDecoration: "none", color: "inherit" }} to={{
                         pathname: "/work"
-                    }}>Work</Link>
+                    }}>Work <ArrowForwardIosIcon className={classes.showArrow} /> </Link>
                 </ListItem>
-                <ListItem  className={classes.listItem} button>
-                    <Link style={{textDecoration: "none", color: "inherit"}} to={{
+                <ListItem className={classes.listItem} button>
+                    <Link style={{ textDecoration: "none", color: "inherit" }} to={{
                         pathname: "/about"
-                    }}>About</Link>
+                    }}>About <ArrowForwardIosIcon className={classes.showArrow} /> </Link>
                 </ListItem>
                 <ListItem className={classes.listItem} button>
-                    <Link style={{textDecoration: "none", color: "inherit"}} to={{
+                    <Link style={{ textDecoration: "none", color: "inherit" }} to={{
                         pathname: "/latest"
-                    }}>Latest</Link>
+                    }}>Latest <ArrowForwardIosIcon className={classes.showArrow} /> </Link>
                 </ListItem>
                 <ListItem className={classes.listItem} button>
-                    <Link style={{textDecoration: "none", color: "inherit"}} to={{
+                    <Link style={{ textDecoration: "none", color: "inherit" }} to={{
                         pathname: "/careers"
-                    }}>Careers</Link>
+                    }}>Careers <ArrowForwardIosIcon className={classes.showArrow} /> </Link>
                 </ListItem>
                 <ListItem className={classes.listItem} button>
-                    <Link style={{textDecoration: "none", color: "inherit"}} to={{
+                    <Link style={{ textDecoration: "none", color: "inherit" }} to={{
                         pathname: "/contact"
-                    }}>Contact</Link>
+                    }}>Contact <ArrowForwardIosIcon className={classes.showArrow} /> </Link>
                 </ListItem>
+                <div style={{ float: "right", marginTop: "20%", marginRight: "10%" }}>
+                    <img
+                        src="https://hellotierney.com/wp-content/uploads/2018/04/Layer-1.gif"
+                        width="150"
+                        // height="100"
+                        className="d-inline-block align-top"
+                        alt="Tierney logo"
+                    />
+                </div>
+
             </List>
         </div>
     );
 
     return (
         <div>
-            <Navbar>
+            <Navbar style={{marginLeft: 30, marginTop: 30, display: "inline-block"}}>
                 <Navbar.Brand href="/">
                     <img
                         src="https://hellotierney.com/wp-content/uploads/2018/04/Layer-1.gif"
@@ -110,10 +141,10 @@ export default function NavbarComp() {
                     />
                 </Navbar.Brand>
             </Navbar>
-            <Nav className="justify-content-end" activeKey="/">
+            <Nav activeKey="/" style={{marginRight: 30, marginTop: 90, display: "inline-block", float: "right"}}>
                 {['right',].map((anchor) => (
                     <React.Fragment key={anchor}>
-                        <Button onClick={toggleDrawer(anchor, true)}>Menu</Button>
+                        <Button className={classes.menu} onClick={toggleDrawer(anchor, true)}>Menu<AddIcon style={{ color: "#DB2416", marginLeft: 5 }} /></Button>
                         <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
                             {list(anchor)}
                         </Drawer>
