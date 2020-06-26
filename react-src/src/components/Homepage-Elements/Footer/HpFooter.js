@@ -56,6 +56,15 @@ const useStyles = makeStyles((theme) => ({
     leftButton: {
         marginRight: "10px",
         marginLeft: "120px", 
+        width: "130px",
+        borderRadius: "50px",
+        color: "#004268",
+        borderColor: "#004268",
+        '&:hover': {
+            backgroundColor: "#004268",
+            color: "white", 
+            border: "none"
+        },
         ['@media (min-width: 992px) and (max-width: 1130px)']: {
             marginLeft: "0px"
         },
@@ -68,7 +77,16 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     rightButton: {
+        width: "130px",
+        borderRadius: "50px",
+        color: "#004268",
+        borderColor: "#004268",
         marginLefT: "10px", 
+        '&:hover': {
+            backgroundColor: "#004268",
+            color: "white", 
+            border: "none"
+        },
         ['@media (min-width: 768px) and (max-width: 992px)']: {
             display: "initial", 
             margin: "0 auto"
@@ -90,7 +108,6 @@ export default function FooterComponent() {
                     <br className={classes.break}/>
                     <div className={classes.topButtons}>
                         <Button className={classes.leftButton} variant="light" href="/contact">Contact Us</Button>
-                        //
                         <Button className={classes.rightButton} variant="outline-info" href="/careers">Explore Jobs</Button>
                     </div>
                 </div>
