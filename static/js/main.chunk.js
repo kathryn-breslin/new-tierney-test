@@ -155,7 +155,7 @@ function FeaturedArticle() {
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_2__["default"].Img, {
     style: {
-      width: "700px",
+      width: "800px",
       height: "400px",
       // position: "absolute",
       // top: "30px",
@@ -175,7 +175,7 @@ function FeaturedArticle() {
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
     style: {
-      width: "700px",
+      width: "750px",
       // position: "absolute",
       top: "-60px",
       left: "-200px",
@@ -214,34 +214,46 @@ function FeaturedArticle() {
       lineNumber: 47,
       columnNumber: 21
     }
-  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    variant: "outline-info",
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. \xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "/latest",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 21
-    }
-  }, "Read More"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
-      zIndex: 3,
-      marginLeft: "62%",
-      marginTop: "-190px"
+      color: "#004268",
+      textDecoration: "underline"
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 52,
+      columnNumber: 25
+    }
+  }, "Read More")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "seeAllWork",
+    style: {
+      zIndex: 3,
+      marginLeft: "63%",
+      marginTop: "-190px",
+      width: "130px"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    variant: "outline-info",
+    className: "seeAllWork",
+    style: {
+      width: "130px",
+      borderRadius: "50px",
+      color: "#004268",
+      borderColor: "#004268"
+    },
+    variant: "outline",
     href: "/latest",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 67,
       columnNumber: 17
     }
   }, "See All")));
@@ -810,7 +822,11 @@ function Mission() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
     style: {
       textAlign: "center !important",
-      margin: "0 auto"
+      margin: "0 auto",
+      width: "130px",
+      borderRadius: "50px",
+      color: "#004268",
+      borderColor: "#004268"
     },
     variant: "outline-info",
     href: "/about",
@@ -1718,8 +1734,12 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     }, this.state.loaded ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
       style: {
         alignContent: "right",
-        marginRight: "-1300px",
-        marginTop: "20px"
+        // marginRight: "-1300px", 
+        marginTop: "20px",
+        width: "130px",
+        borderRadius: "50px",
+        color: "#004268",
+        borderColor: "#004268"
       },
       variant: "outline-info",
       href: "/work",
@@ -1733,21 +1753,21 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86,
+        lineNumber: 93,
         columnNumber: 17
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Elements_FeaturedArticle_HP_FeaturedArticle_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 87,
+        lineNumber: 94,
         columnNumber: 17
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Elements_Footer_HpFooter_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 88,
+        lineNumber: 95,
         columnNumber: 17
       }
     }));

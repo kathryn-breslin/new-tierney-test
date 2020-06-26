@@ -78,7 +78,14 @@ class Home extends Component {
                     <br />
 
                     <div className="HpWorkSectionBtn">
-                        {this.state.loaded ? <Button style={{ alignContent: "right", marginRight: "-1300px", marginTop: "20px"}} variant="outline-info" href="/work">See All</Button> : null}
+                        {this.state.loaded ? <Button style={{ 
+                            alignContent: "right", 
+                            // marginRight: "-1300px", 
+                            marginTop: "20px", 
+                            width: "130px",
+                            borderRadius: "50px",
+                            color: "#004268",
+                            borderColor: "#004268",}} variant="outline-info" href="/work">See All</Button> : null}
                     </div>
 
                 </div>

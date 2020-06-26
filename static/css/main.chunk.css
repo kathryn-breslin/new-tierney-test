@@ -53,6 +53,9 @@ code {
     }
 
 }
-
+.seeAllWork:hover {
+    background-color: "#004268" !important;
+    color: "white" !important;
+}
 
 /*# sourceMappingURL=main.chunk.css.map*/

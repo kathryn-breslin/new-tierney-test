@@ -16,7 +16,14 @@ export default function Mission() {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
                     </div>
                     <div className="row">
-                        <Button style={{ textAlign: "center !important", margin: "0 auto" }} variant="outline-info" href="/about">Learn More</Button>
+                        <Button style={{
+                            textAlign: "center !important", 
+                            margin: "0 auto", 
+                            width: "130px",
+                            borderRadius: "50px",
+                            color: "#004268",
+                            borderColor: "#004268",
+                        }} variant="outline-info" href="/about">Learn More</Button>
                     </div>
                 </div>
             </div>
