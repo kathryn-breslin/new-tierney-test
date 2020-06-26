@@ -12,25 +12,92 @@ const useStyles = makeStyles((theme) => ({
             width: '25ch',
         },
     },
+    top: {
+        backgroundColor: "#DFE0E1",
+        height: "100px",
+        marginTop: "200px",
+        textAlign: "center",
+        ['@media (min-width: 992px) and (max-width: 1130px)']: {
+            height: "150px"
+        },
+        ['@media (min-width: 768px) and (max-width: 992px)']: {
+            height: "150px"
+        },
+        ['@media (min-width: 576px) and (max-width: 768px)']: {
+            height: "200px"
+
+        },
+    },
+    topText: {
+        display: "inline-block",
+        margin: "0 auto",
+        fontFamily: 'Montserrat, sans-serif',
+        fontWeight: 700,
+        fontSize: 30,
+        paddingTop: "10px"
+    },
+    break: {
+        display: "none", 
+        ['@media (min-width: 992px) and (max-width: 1130px)']: {
+            display: "inline"
+        },
+        ['@media (min-width: 768px) and (max-width: 992px)']: {
+            display: "inline"
+        },  
+    },
+    topButtons: {
+        display: "inline-block", 
+        marginTop: "10px",
+        ['@media (min-width: 768px) and (max-width: 992px)']: {
+            display: "initial", 
+            margin: "0 auto"
+        },  
+    },
+    leftButton: {
+        marginRight: "10px",
+        marginLeft: "120px", 
+        ['@media (min-width: 992px) and (max-width: 1130px)']: {
+            marginLeft: "0px"
+        },
+        ['@media (min-width: 768px) and (max-width: 992px)']: {
+            marginLeft: "0px"
+        },  
+        ['@media (min-width: 576px) and (max-width: 768px)']: {
+            marginLeft: "0px"
+
+        },
+    },
+    rightButton: {
+        marginLefT: "10px", 
+        ['@media (min-width: 768px) and (max-width: 992px)']: {
+            display: "initial", 
+            margin: "0 auto"
+        },  
+    },
+    bottom: {
+
+    }
 }));
+
 
 export default function FooterComponent() {
     const classes = useStyles();
     return (
         <div>
-            <div style={{ backgroundColor: "#DFE0E1", height: "100px", marginTop: "200px", textAlign: "center" }}>
+            <div className={classes.top}>
                 <div style={{ paddingTop: "20px" }}>
-                    <div style={{ display: "inline-block", margin: "0 auto" }}>Lorem ipsum Contact us or Careers? ipsum lorem amet.</div>
-                    <div style={{ display: "inline-block", margin: "10px" }}>
-                        <Button style={{ marginRight: "10px" }} variant="light" href="/contact">Contact Us</Button>
+                    <div className={classes.topText}>Lorem ipsum Contact us or Careers? ipsum lorem amet.</div>
+                    <br className={classes.break}/>
+                    <div className={classes.topButtons}>
+                        <Button className={classes.leftButton} variant="light" href="/contact">Contact Us</Button>
                         //
-                        <Button style={{ marginLeft: "10px" }} variant="outline-info" href="/careers">Explore Jobs</Button>
+                        <Button className={classes.rightButton} variant="outline-info" href="/careers">Explore Jobs</Button>
                     </div>
                 </div>
             </div>
 
 
-            <div style={{ backgroundColor: "#F1F1F1", height: "400px", marginLeft: "auto", marginRight: "auto" }}>
+            <div className={classes.bottom} style={{ backgroundColor: "#F1F1F1", height: "400px", marginLeft: "auto", marginRight: "auto" }}>
                 <div className="container" style={{ paddingTop: "50px" }}>
                     <div className="row">
                         <div className="col-3">
@@ -86,7 +153,7 @@ export default function FooterComponent() {
                                 width="100"
                                 className="d-inline-block align-top"
                                 alt="Tierney logo"
-                                style={{ display: "inline-block", marginLeft: "10px", marginTop: "-5px" }}></img>                     
+                                style={{ display: "inline-block", marginLeft: "10px", marginTop: "-5px" }}></img>
                         </div>
                     </div>
                 </div>

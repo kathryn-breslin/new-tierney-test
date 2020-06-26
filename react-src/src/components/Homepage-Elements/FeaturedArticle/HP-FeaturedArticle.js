@@ -42,9 +42,20 @@ export default function FeaturedArticle() {
                     border: "none"
 
                 }}>
-                    <Card.Subtitle>Culture</Card.Subtitle>
-                    <Card.Title>Article</Card.Title>
-                    <Card.Text>
+                    <Card.Subtitle style={
+                        {color: "#DB2416", 
+                        fontFamily: 'Montserrat, sans-serif',
+                        fontWeight: 700,
+                        }}>Culture</Card.Subtitle>
+                    <Card.Title  style={{ 
+                        fontFamily: 'Montserrat, sans-serif',
+                        fontWeight: 700,
+                        fontSize: 30, 
+                        paddingTop: "10px"
+                        }}>Article Title</Card.Title>
+                    <Card.Text style={{ 
+                        fontFamily: 'Montserrat, sans-serif',
+                        }}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna
                         aliqua. Ut enim ad minim veniam, quis nostrud exercitation
