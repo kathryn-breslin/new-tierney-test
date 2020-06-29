@@ -12,46 +12,5 @@ code {
     monospace;
 }
 
-@media (min-width: 200px) and (max-width: 576px) {
-
-}
-
-@media (min-width: 576px) and (max-width: 768px) { 
-
-
-}
-
-@media (min-width: 768px) and (max-width: 992px) { 
-    .HpWorkSection {
-        max-width: 700px;
-        margin: 0 auto;
-    }
-
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {      
-    .HpWorkSection {
-        max-width: 900px;
-        margin: 0 auto;
-    }
-}
-
-@media (min-width: 1200px) and (max-width: 1400px) { 
-    
-    .HpWorkSection {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-}
-
-@media (min-width: 1400px) and (max-width: 1690px) { 
-    
-    .HpWorkSection {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-}
 
 /*# sourceMappingURL=main.chunk.css.map*/

@@ -2,32 +2,32 @@ import React from "react";
 import Button from 'react-bootstrap/Button'
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import { InputAdornment } from "@material-ui/core";
+// import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+// import { InputAdornment } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-          '& label.Mui-focused': {
-              color: "#004268",
-            },
-            '& .MuiInput-underline:after': {
-              borderBottomColor: "#004268",
-            },
-            '& .MuiOutlinedInput-root': {
-              '& fieldset': {
+        '& label.Mui-focused': {
+            color: "#004268",
+        },
+        '& .MuiInput-underline:after': {
+            borderBottomColor: "#004268",
+        },
+        '& .MuiOutlinedInput-root': {
+            '& fieldset': {
                 borderColor: "#004268",
-                backgroundColor: "#E0DDD5", 
+                backgroundColor: "#E0DDD5",
                 width: "200px"
-              },
-              '&:hover fieldset': {
-                borderColor: "#004268",
-              },
-              '&.Mui-focused fieldset': {
-                borderColor: "#004268",
-                backgroundColor:  "#E0DDD5"
-              },
             },
-   
+            '&:hover fieldset': {
+                borderColor: "#004268",
+            },
+            '&.Mui-focused fieldset': {
+                borderColor: "#004268",
+                backgroundColor: "#E0DDD5"
+            },
+        },
+
     },
     top: {
         backgroundColor: "#DFE0E1",
@@ -118,10 +118,36 @@ const useStyles = makeStyles((theme) => ({
             margin: "0 auto"
         },
     },
+    inputField: {
+        backgroundColor: "#E0DDD5", 
+        width: "200px",
+        height: "40px",
+        borderRadius: "50px",
+        border: "none", 
+        textAlign: "center", 
+        outline: "none !important",
+        outlineOffset: "none !important",
+    },
+    submitEmailBtn: {
+        width: "200px",
+        height: "40px",
+        borderRadius: "50px",
+        color: "#004268",
+        borderColor: "#004268",
+        backgroundColor: "white",
+        marginTop: "10px", 
+        outline: "none !important",
+        outlineOffset: "none !important",
+        '&:hover': {
+            backgroundColor: "#004268",
+            color: "white",
+            border: "none"
+        },
+    }
 }));
 
 
-export default function FooterComponent() {
+export default function FooterComponent(props) {
     const classes = useStyles();
     return (
         <div>
@@ -140,9 +166,9 @@ export default function FooterComponent() {
             <div className={classes.bottom} style={{ backgroundColor: "#F1F1F1", height: "400px", marginLeft: "auto", marginRight: "auto" }}>
                 <div className="container" style={{ paddingTop: "50px" }}>
                     <div className="row">
-                        <div className="col-lg-3 col-md-12 col-sm-12" style={{marginBottom: "50px"}}>
+                        <div className="col-lg-3 col-md-12 col-sm-12" style={{ marginBottom: "50px" }}>
                             <h6>Sign up &amp; stay Connected.</h6>
-                            <form className={classes.root} noValidate autoComplete="off">
+                            <form className={classes.root}>
                                 {/* <TextField className={classes.emailField} label="Email"
                                     InputProps={{
                                         endAdornment: (
@@ -159,12 +185,24 @@ export default function FooterComponent() {
                                             </InputAdornment>
                                         )
                                     }}/> */}
-                                <TextField
-                                    className={classes.margin}
-                                    label="Enter Email Here"
-                                    variant="outlined"
-                                    id="custom-css-outlined-input"
-                                />                                
+                                <input
+                                    className={classes.inputField}
+                                    type="email"
+                                    aria-label="Email"
+                                    onChange={props.handleInputChange}
+                                    value={props.userEmail}
+                                    name="userEmail"
+                                    placeholder="Enter Email Here"
+                                    id="userEmail"
+                                />
+                                <button
+                                    onClick={props.handleEmailSubmit}
+                                    className={classes.submitEmailBtn}
+                                    type="submit"
+                                    id="button"
+                                >
+                                    Join
+                            </button>
                             </form>
                         </div>
                         <div className="col-lg-3 col-md-3 col-sm-4 officeField">

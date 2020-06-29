@@ -14,12 +14,16 @@ class Home extends Component {
 
         this.state = {
             data: [],
-            loaded: false
+            loaded: false,
+            userEmail: ""
         }
+
+        this.loadIcon = this.loadIcon.bind(this);
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleEmailSubmit = this.handleEmailSubmit.bind(this);
     }
 
     componentDidMount() {
-
         axios.get("https://hellotierney.com/wp-json/acf/v3/work")
             .then((response) => response.data)
             .then(dataSet => {
@@ -38,6 +42,7 @@ class Home extends Component {
 
                     {this.state.data.map(item => {
                         if (item.acf.featured_post[0] === "featured") {
+
                             return (
                                 <HpWorkSection
                                     client={item.acf.case_study_hero_client}
@@ -66,6 +71,30 @@ class Home extends Component {
         }
     }
 
+    handleInputChange = (event) => {
+        event.preventDefault();
+
+        const { name, value } = event.target;
+        this.setState({
+            [name]: value
+        });
+        console.log({ [name]: value })
+    }
+
+    handleEmailSubmit = (event) => {
+        event.preventDefault();
+        const { userEmail } = this.state;
+
+        this.setState({
+            userEmail: userEmail
+        })
+        console.log("User Email: " + this.state.userEmail)
+
+        //Post to MailChimp
+    }
+
+
+
     render() {
 
         return (
@@ -78,21 +107,26 @@ class Home extends Component {
                     <br />
 
                     <div className="HpWorkSectionBtn">
-                        {this.state.loaded ? <Button style={{ 
-                            alignContent: "right", 
+                        {this.state.loaded ? <Button style={{
+                            alignContent: "right",
                             // marginRight: "-1300px", 
-                            marginTop: "20px", 
+                            marginTop: "20px",
                             width: "130px",
                             borderRadius: "50px",
                             color: "#004268",
-                            borderColor: "#004268",}} variant="outline-info" href="/work">See All</Button> : null}
+                            borderColor: "#004268",
+                        }} variant="outline-info" href="/work">See All</Button> : null}
                     </div>
 
                 </div>
 
                 <HpMission />
                 <HpFeaturedArticle />
-                <HpFooter />
+                <HpFooter
+                    userEmail={this.state.userEmail}
+                    handleInputChange={this.handleInputChange}
+                    handleEmailSubmit={this.handleEmailSubmit}
+                />
 
             </div>
         )

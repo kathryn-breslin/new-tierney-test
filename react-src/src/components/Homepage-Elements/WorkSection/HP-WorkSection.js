@@ -1,19 +1,56 @@
 import React, { Component } from "react";
-import Card from 'react-bootstrap/Card'
-import "./HP-WorkSection.css";
+import Button from 'react-bootstrap/Button'
+import { withStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+
+const useStyles = theme => ({
+    cardContainer: {
+        width: "350px",
+        height: "auto",
+        margin: "20px",
+        border: "none",
+        borderRadius: "10px",
+        display: "inline-block",
+        position: "relative",
+    },
+    cardImg: {
+        width: "350px",
+        height: "200px",
+        objectFit: "cover",
+        borderRadius: "10px"
+    },
+    textOverlay: {
+        position: "absolute",
+        color: "white",
+        fontFamily: 'Montserrat, sans-serif',
+        fontWeight: 700,
+        fontSize: "20px",
+        top: '20px',
+        left: '20px',
+    }
+})
 
 class HpWorkSection extends Component {
 
+    constructor(props) {
+        super(props);
+    }
+
     render() {
+        const { classes } = this.props;
+
         return (
-            <Card className="bg-dark text-white work-section-card" style={{ width: "400px", height: "auto", margin: "20px", border: "none", borderRadius: "10px", display: "inline-block" }}>
-                <Card.Img src={this.props.client_image} alt={this.props.client} style={{ width: "400px", height: "300px", objectFit: "cover", borderRadius: "10px" }} />
-                <Card.ImgOverlay>
-                    <Card.Title>{this.props.client}</Card.Title>
-                </Card.ImgOverlay>
+            <Card
+                className={classes.cardContainer}>
+                <CardMedia className={classes.cardImg}
+                    image={this.props.client_image} alt={this.props.client} />
+
+                    <div className={classes.textOverlay}>{this.props.client}</div>
             </Card>
         )
     }
 }
 
-export default HpWorkSection;
+export default withStyles(useStyles)(HpWorkSection);
