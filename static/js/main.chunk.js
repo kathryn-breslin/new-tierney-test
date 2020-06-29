@@ -442,6 +442,9 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
     borderRadius: "50px",
     color: "#004268",
     borderColor: "#004268",
+    fontFamily: 'Montserrat, sans-serif',
+    fontWeight: 700,
+    fontSize: 15,
     '&:hover': {
       backgroundColor: "#004268",
       color: "white",
@@ -466,6 +469,9 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
     color: "#004268",
     borderColor: "#004268",
     marginLefT: "10px",
+    fontFamily: 'Montserrat, sans-serif',
+    fontWeight: 700,
+    fontSize: 15,
     '&:hover': {
       backgroundColor: "#004268",
       color: "white",
@@ -483,6 +489,9 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
     borderRadius: "50px",
     border: "none",
     textAlign: "center",
+    fontFamily: 'Montserrat, sans-serif',
+    fontWeight: 700,
+    fontSize: 15,
     outline: "none !important",
     outlineOffset: "none !important"
   },
@@ -493,6 +502,9 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
     color: "#004268",
     borderColor: "#004268",
     backgroundColor: "white",
+    fontFamily: 'Montserrat, sans-serif',
+    fontWeight: 700,
+    fontSize: 15,
     marginTop: "10px",
     outline: "none !important",
     outlineOffset: "none !important",
@@ -501,6 +513,11 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
       color: "white",
       border: "none"
     }
+  },
+  addresses: {
+    fontFamily: 'Montserrat, sans-serif',
+    fontWeight: 400,
+    fontSize: 15
   }
 }));
 function FooterComponent(props) {
@@ -509,7 +526,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153,
+      lineNumber: 170,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -517,7 +534,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154,
+      lineNumber: 171,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -527,7 +544,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155,
+      lineNumber: 172,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -535,7 +552,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 156,
+      lineNumber: 173,
       columnNumber: 21
     }
   }, "Lorem ipsum Contact us or Careers? ipsum lorem amet."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
@@ -543,7 +560,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 157,
+      lineNumber: 174,
       columnNumber: 21
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -551,7 +568,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 158,
+      lineNumber: 175,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -561,7 +578,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 159,
+      lineNumber: 176,
       columnNumber: 25
     }
   }, "Contact Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -571,7 +588,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 160,
+      lineNumber: 177,
       columnNumber: 25
     }
   }, "Explore Jobs")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -585,7 +602,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 166,
+      lineNumber: 183,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -596,7 +613,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 167,
+      lineNumber: 184,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -604,25 +621,26 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 168,
+      lineNumber: 185,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-lg-3 col-md-12 col-sm-12",
     style: {
-      marginBottom: "50px"
+      marginBottom: "50px",
+      textAlign: "center"
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 169,
+      lineNumber: 186,
       columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 170,
+      lineNumber: 187,
       columnNumber: 29
     }
   }, "Sign up & stay Connected."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
@@ -630,7 +648,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 171,
+      lineNumber: 188,
       columnNumber: 29
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -645,7 +663,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 188,
+      lineNumber: 205,
       columnNumber: 33
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
@@ -656,128 +674,137 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 198,
+      lineNumber: 215,
       columnNumber: 33
     }
   }, "Join"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-3 col-md-3 col-sm-4 officeField",
+    className: "col-lg-3 col-md-3 col-sm-4",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 208,
+      lineNumber: 225,
       columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+    className: classes.addresses,
     style: {
       color: "#004153",
-      textDecoration: "underline"
+      textDecoration: "underline",
+      fontWeight: 700
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 209,
+      lineNumber: 226,
       columnNumber: 29
     }
   }, "Philadelphia"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: classes.addresses,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 210,
+      lineNumber: 227,
       columnNumber: 29
     }
   }, "1700 Market St. 29th Floor ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 210,
-      columnNumber: 59
+      lineNumber: 227,
+      columnNumber: 89
     }
   }), " Philadelphia, PA 19103 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 210,
-      columnNumber: 89
+      lineNumber: 227,
+      columnNumber: 119
     }
   }), "(215) 790-4100")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-lg-3 col-md-3 col-sm-4",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 213,
+      lineNumber: 230,
       columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+    className: classes.addresses,
     style: {
       color: "#004153",
-      textDecoration: "underline"
+      textDecoration: "underline",
+      fontWeight: 700
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 214,
+      lineNumber: 231,
       columnNumber: 29
     }
   }, "New York City"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: classes.addresses,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 215,
+      lineNumber: 232,
       columnNumber: 29
     }
   }, "100 West 33rd St. 5th Floor ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 215,
-      columnNumber: 60
+      lineNumber: 232,
+      columnNumber: 90
     }
   }), " New York, NY 10001 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 215,
-      columnNumber: 86
+      lineNumber: 232,
+      columnNumber: 116
     }
   }), "(646) 736-1690")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-lg-3 col-md-3 col-sm-4",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 217,
+      lineNumber: 234,
       columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+    className: classes.addresses,
     style: {
       color: "#004153",
-      textDecoration: "underline"
+      textDecoration: "underline",
+      fontWeight: 700
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 218,
+      lineNumber: 235,
       columnNumber: 29
     }
   }, "Harrisburg"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: classes.addresses,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 219,
+      lineNumber: 236,
       columnNumber: 29
     }
   }, "212 Locust St. Suite 400 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 219,
-      columnNumber: 57
+      lineNumber: 236,
+      columnNumber: 87
     }
   }), "Harrisburg, PA 17101 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 219,
-      columnNumber: 84
+      lineNumber: 236,
+      columnNumber: 114
     }
   }), " (717) 231-5330")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container",
@@ -787,7 +814,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 224,
+      lineNumber: 241,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -795,7 +822,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 225,
+      lineNumber: 242,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -803,7 +830,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 226,
+      lineNumber: 243,
       columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
@@ -813,14 +840,14 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 227,
+      lineNumber: 244,
       columnNumber: 29
     }
   }, "Follow Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 228,
+      lineNumber: 245,
       columnNumber: 29
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -830,7 +857,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 229,
+      lineNumber: 246,
       columnNumber: 33
     }
   }, "Twitter"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -840,7 +867,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 229,
+      lineNumber: 246,
       columnNumber: 84
     }
   }, "Facebook"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -850,7 +877,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 229,
+      lineNumber: 246,
       columnNumber: 136
     }
   }, "LinkedIn"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -860,7 +887,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 229,
+      lineNumber: 246,
       columnNumber: 188
     }
   }, "YouTube"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -870,7 +897,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 229,
+      lineNumber: 246,
       columnNumber: 239
     }
   }, "Instagram"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -880,7 +907,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 229,
+      lineNumber: 246,
       columnNumber: 292
     }
   }, "IPG"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -891,7 +918,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 232,
+      lineNumber: 249,
       columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -901,14 +928,14 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 233,
+      lineNumber: 250,
       columnNumber: 29
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 233,
+      lineNumber: 250,
       columnNumber: 68
     }
   }), "Copyright 2020 Tierney | Privacy & Terms "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -924,7 +951,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 234,
+      lineNumber: 251,
       columnNumber: 29
     }
   }))))));

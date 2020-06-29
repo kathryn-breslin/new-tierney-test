@@ -83,6 +83,9 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: "50px",
         color: "#004268",
         borderColor: "#004268",
+        fontFamily: 'Montserrat, sans-serif',
+        fontWeight: 700,
+        fontSize: 15,
         '&:hover': {
             backgroundColor: "#004268",
             color: "white",
@@ -108,6 +111,9 @@ const useStyles = makeStyles((theme) => ({
         color: "#004268",
         borderColor: "#004268",
         marginLefT: "10px",
+        fontFamily: 'Montserrat, sans-serif',
+        fontWeight: 700,
+        fontSize: 15,
         '&:hover': {
             backgroundColor: "#004268",
             color: "white",
@@ -119,12 +125,15 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     inputField: {
-        backgroundColor: "#E0DDD5", 
+        backgroundColor: "#E0DDD5",
         width: "200px",
         height: "40px",
         borderRadius: "50px",
-        border: "none", 
-        textAlign: "center", 
+        border: "none",
+        textAlign: "center",
+        fontFamily: 'Montserrat, sans-serif',
+        fontWeight: 700,
+        fontSize: 15,
         outline: "none !important",
         outlineOffset: "none !important",
     },
@@ -135,7 +144,10 @@ const useStyles = makeStyles((theme) => ({
         color: "#004268",
         borderColor: "#004268",
         backgroundColor: "white",
-        marginTop: "10px", 
+        fontFamily: 'Montserrat, sans-serif',
+        fontWeight: 700,
+        fontSize: 15,
+        marginTop: "10px",
         outline: "none !important",
         outlineOffset: "none !important",
         '&:hover': {
@@ -143,7 +155,12 @@ const useStyles = makeStyles((theme) => ({
             color: "white",
             border: "none"
         },
-    }
+    },
+    addresses: {
+        fontFamily: 'Montserrat, sans-serif',
+        fontWeight: 400,
+        fontSize: 15,
+    },
 }));
 
 
@@ -166,7 +183,7 @@ export default function FooterComponent(props) {
             <div className={classes.bottom} style={{ backgroundColor: "#F1F1F1", height: "400px", marginLeft: "auto", marginRight: "auto" }}>
                 <div className="container" style={{ paddingTop: "50px" }}>
                     <div className="row">
-                        <div className="col-lg-3 col-md-12 col-sm-12" style={{ marginBottom: "50px" }}>
+                        <div className="col-lg-3 col-md-12 col-sm-12" style={{ marginBottom: "50px", textAlign: "center" }}>
                             <h6>Sign up &amp; stay Connected.</h6>
                             <form className={classes.root}>
                                 {/* <TextField className={classes.emailField} label="Email"
@@ -205,18 +222,18 @@ export default function FooterComponent(props) {
                             </button>
                             </form>
                         </div>
-                        <div className="col-lg-3 col-md-3 col-sm-4 officeField">
-                            <h6 style={{ color: "#004153", textDecoration: "underline" }}>Philadelphia</h6>
-                            <p>1700 Market St. 29th Floor <br /> Philadelphia, PA 19103 <br />(215) 790-4100</p>
+                        <div className="col-lg-3 col-md-3 col-sm-4">
+                            <h6 className={classes.addresses} style={{ color: "#004153", textDecoration: "underline", fontWeight: 700 }}>Philadelphia</h6>
+                            <p className={classes.addresses}>1700 Market St. 29th Floor <br /> Philadelphia, PA 19103 <br />(215) 790-4100</p>
                         </div>
 
                         <div className="col-lg-3 col-md-3 col-sm-4">
-                            <h6 style={{ color: "#004153", textDecoration: "underline" }}>New York City</h6>
-                            <p>100 West 33rd St. 5th Floor <br /> New York, NY 10001 <br />(646) 736-1690</p>
+                            <h6 className={classes.addresses} style={{ color: "#004153", textDecoration: "underline", fontWeight: 700 }}>New York City</h6>
+                            <p className={classes.addresses}>100 West 33rd St. 5th Floor <br /> New York, NY 10001 <br />(646) 736-1690</p>
                         </div>
                         <div className="col-lg-3 col-md-3 col-sm-4">
-                            <h6 style={{ color: "#004153", textDecoration: "underline" }}>Harrisburg</h6>
-                            <p>212 Locust St. Suite 400 <br />Harrisburg, PA 17101 <br /> (717) 231-5330</p>
+                            <h6 className={classes.addresses} style={{ color: "#004153", textDecoration: "underline", fontWeight: 700 }}>Harrisburg</h6>
+                            <p className={classes.addresses}>212 Locust St. Suite 400 <br />Harrisburg, PA 17101 <br /> (717) 231-5330</p>
                         </div>
                     </div>
                 </div>
