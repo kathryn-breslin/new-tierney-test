@@ -46,6 +46,12 @@ const useStyles = makeStyles({
         border: "none",
         boxShadow: "none",
         fontFamily: 'Montserrat, sans-serif',
+        ['@media (min-width: 1130px) and (max-width: 1190px)']: {
+            width: "600px",
+        },
+        ['@media (min-width: 992px) and (max-width: 1130px)']: {
+            width: "600px",
+        },
         ['@media (min-width: 768px) and (max-width: 992px)']: {
             width: "600px",
             left: "-100px"

@@ -1,13 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
 import Navbar from "../components/Navbar";
+import HpFooter from "../components/Homepage-Elements/Footer/HpFooter.js";
 
-const Contact = (props) => {
-    return (
-        <div className="Page">
-            <Navbar/>
-            <h1>This is the Contact page</h1>
-        </div>
-    )
+class Contact extends Component {
+
+    render() {
+        return (
+            <div>
+                <Navbar />
+                <h1>Contact Page</h1>
+                <HpFooter />
+            </div>
+
+        )
+    }
 }
 
 export default Contact; 

@@ -1,13 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
 import Navbar from "../components/Navbar";
+import HpFooter from "../components/Homepage-Elements/Footer/HpFooter.js";
 
-const Latest = (props) => {
-    return (
-        <div className="Page">
-            <Navbar/>
-            <h1>This is the Latest page</h1>
-        </div>
-    )
+class Latest extends Component {
+
+    render() {
+        return (
+            <div>
+                <Navbar />
+                <h1>Latest Page</h1>
+                <HpFooter />
+            </div>
+
+        )
+    }
 }
 
 export default Latest; 

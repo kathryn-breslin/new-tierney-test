@@ -1,12 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
 import Navbar from "../components/Navbar";
-const About = (props) => {
-    return (
-        <div className="Page">
-            <Navbar/>
-            <h1>About Page</h1>
-        </div>
-    )
+import HpFooter from "../components/Homepage-Elements/Footer/HpFooter.js";
+
+class About extends Component {
+
+    render() {
+        return (
+            <div>
+                <Navbar />
+                <h1>About Page</h1>
+                <HpFooter />
+            </div>
+
+        )
+    }
 }
 
 export default About; 

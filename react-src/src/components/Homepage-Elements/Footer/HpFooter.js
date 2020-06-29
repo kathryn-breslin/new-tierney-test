@@ -1,7 +1,11 @@
 import React from "react";
 import Button from 'react-bootstrap/Button'
 import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import InstagramIcon from '@material-ui/icons/Instagram';
 // import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 // import { InputAdornment } from "@material-ui/core";
 
@@ -241,13 +245,28 @@ export default function FooterComponent(props) {
                 <div className="container" style={{ marginTop: "100px" }}>
                     <div className="row">
                         <div className="col-5">
-                            <h6 style={{ color: "#004153" }}>Follow Us</h6>
+                            <h6 style={{ color: "#004153", fontWeight: 700 }}>Follow Us</h6>
                             <div>
-                                <p style={{ display: "inline-block" }}>Twitter</p> <p style={{ display: "inline-block" }}>Facebook</p> <p style={{ display: "inline-block" }}>LinkedIn</p> <p style={{ display: "inline-block" }}>YouTube</p> <p style={{ display: "inline-block" }}>Instagram</p> <p style={{ display: "inline-block" }}>IPG</p>
+                                <p style={{
+                                    display: "inline-block",
+                                }}><TwitterIcon style={{color: "#004268", fontSize: 30}} /></p>
+                                <p style={{
+                                    display: "inline-block", marginLeft: "10px"
+                                }}><FacebookIcon style={{color: "#004268", fontSize: 30}} /></p>
+                                <p style={{
+                                    display: "inline-block", marginLeft: "10px"
+                                }}><LinkedInIcon style={{color: "#004268", fontSize: 30}} /></p>
+                                <p style={{
+                                    display: "inline-block", marginLeft: "10px"
+                                }}><YouTubeIcon style={{color: "#004268", fontSize: 30}} /></p>
+                                <p style={{
+                                    display: "inline-block", marginLeft: "10px" 
+                                }}><InstagramIcon style={{color: "#004268", fontSize: 30}} /></p> 
+                                <p style={{ display: "inline-block", marginLeft: "10px"}}>IPG</p>
                             </div>
                         </div>
                         <div className="col-7" style={{ textAlign: "right" }}>
-                            <p style={{ display: "inline-block" }}><br />Copyright 2020 Tierney | Privacy &amp; Terms </p>
+                            <p style={{ display: "inline-block"}}><br />Copyright 2020 Tierney | Privacy &amp; Terms </p>
                             <img
                                 src="https://hellotierney.com/wp-content/uploads/2018/04/Layer-1.gif"
                                 width="100"

@@ -1,13 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
 import Navbar from "../components/Navbar";
+import HpFooter from "../components/Homepage-Elements/Footer/HpFooter.js";
 
-const Work = (props) => {
-    return (
-        <div className="Page">
-            <Navbar/>
-            <h1>This is the Work page</h1>
-        </div>
-    )
+class Work extends Component {
+
+    render() {
+        return (
+            <div>
+                <Navbar />
+                <h1>Work Page</h1>
+                <HpFooter />
+            </div>
+
+        )
+    }
 }
 
 export default Work; 
