@@ -48,6 +48,7 @@ const useStyles = makeStyles({
     },
     menu: {
         fontFamily: 'Montserrat, sans-serif',
+        border: "none",
         fontWeight: 700,
         fontSize: 20,
     '&:hover': {

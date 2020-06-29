@@ -7,21 +7,41 @@ import { InputAdornment } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        '& > *': {
-            margin: theme.spacing(1),
-            width: '25ch',
-        },
+          '& label.Mui-focused': {
+              color: "#004268",
+            },
+            '& .MuiInput-underline:after': {
+              borderBottomColor: "#004268",
+            },
+            '& .MuiOutlinedInput-root': {
+              '& fieldset': {
+                borderColor: "#004268",
+                backgroundColor: "#E0DDD5", 
+                width: "200px"
+              },
+              '&:hover fieldset': {
+                borderColor: "#004268",
+              },
+              '&.Mui-focused fieldset': {
+                borderColor: "#004268",
+                backgroundColor:  "#E0DDD5"
+              },
+            },
+   
     },
     top: {
         backgroundColor: "#DFE0E1",
         height: "100px",
         marginTop: "200px",
         textAlign: "center",
+        ['@media (min-width: 1130px) and (max-width: 1190px)']: {
+            height: "150px"
+        },
         ['@media (min-width: 992px) and (max-width: 1130px)']: {
             height: "150px"
         },
         ['@media (min-width: 768px) and (max-width: 992px)']: {
-            height: "150px"
+            height: "175px"
         },
         ['@media (min-width: 576px) and (max-width: 768px)']: {
             height: "200px"
@@ -37,40 +57,46 @@ const useStyles = makeStyles((theme) => ({
         paddingTop: "10px"
     },
     break: {
-        display: "none", 
+        display: "none",
+        ['@media (min-width: 1130px) and (max-width: 1190px)']: {
+            display: "inline"
+        },
         ['@media (min-width: 992px) and (max-width: 1130px)']: {
             display: "inline"
         },
         ['@media (min-width: 768px) and (max-width: 992px)']: {
             display: "inline"
-        },  
+        },
     },
     topButtons: {
-        display: "inline-block", 
+        display: "inline-block",
         marginTop: "10px",
         ['@media (min-width: 768px) and (max-width: 992px)']: {
-            display: "initial", 
+            display: "initial",
             margin: "0 auto"
-        },  
+        },
     },
     leftButton: {
         marginRight: "10px",
-        marginLeft: "120px", 
+        marginLeft: "120px",
         width: "130px",
         borderRadius: "50px",
         color: "#004268",
         borderColor: "#004268",
         '&:hover': {
             backgroundColor: "#004268",
-            color: "white", 
+            color: "white",
             border: "none"
+        },
+        ['@media (min-width: 1130px) and (max-width: 1190px)']: {
+            marginLeft: "0px"
         },
         ['@media (min-width: 992px) and (max-width: 1130px)']: {
             marginLeft: "0px"
         },
         ['@media (min-width: 768px) and (max-width: 992px)']: {
             marginLeft: "0px"
-        },  
+        },
         ['@media (min-width: 576px) and (max-width: 768px)']: {
             marginLeft: "0px"
 
@@ -81,20 +107,17 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: "50px",
         color: "#004268",
         borderColor: "#004268",
-        marginLefT: "10px", 
+        marginLefT: "10px",
         '&:hover': {
             backgroundColor: "#004268",
-            color: "white", 
+            color: "white",
             border: "none"
         },
         ['@media (min-width: 768px) and (max-width: 992px)']: {
-            display: "initial", 
+            display: "initial",
             margin: "0 auto"
-        },  
+        },
     },
-    bottom: {
-
-    }
 }));
 
 
@@ -105,7 +128,7 @@ export default function FooterComponent() {
             <div className={classes.top}>
                 <div style={{ paddingTop: "20px" }}>
                     <div className={classes.topText}>Lorem ipsum Contact us or Careers? ipsum lorem amet.</div>
-                    <br className={classes.break}/>
+                    <br className={classes.break} />
                     <div className={classes.topButtons}>
                         <Button className={classes.leftButton} variant="light" href="/contact">Contact Us</Button>
                         <Button className={classes.rightButton} variant="outline-info" href="/careers">Explore Jobs</Button>
@@ -117,38 +140,43 @@ export default function FooterComponent() {
             <div className={classes.bottom} style={{ backgroundColor: "#F1F1F1", height: "400px", marginLeft: "auto", marginRight: "auto" }}>
                 <div className="container" style={{ paddingTop: "50px" }}>
                     <div className="row">
-                        <div className="col-3">
+                        <div className="col-lg-3 col-md-12 col-sm-12" style={{marginBottom: "50px"}}>
                             <h6>Sign up &amp; stay Connected.</h6>
                             <form className={classes.root} noValidate autoComplete="off">
-                                <TextField id="outlined-basic" label="Enter your email address" variant="outlined"
+                                {/* <TextField className={classes.emailField} label="Email"
                                     InputProps={{
                                         endAdornment: (
                                             <InputAdornment>
                                                 <ArrowForwardIosIcon>
 
 
-                                                    {/* Link below to Input Adornment */}
-                                                    {/* https://stackoverflow.com/questions/51694149/add-element-inside-textfield-component-material-ui */}
+                                                    Link below to Input Adornment
+                                                    https://stackoverflow.com/questions/51694149/add-element-inside-textfield-component-material-ui
 
 
 
                                                 </ArrowForwardIosIcon>
                                             </InputAdornment>
                                         )
-                                    }}
-                                />
+                                    }}/> */}
+                                <TextField
+                                    className={classes.margin}
+                                    label="Enter Email Here"
+                                    variant="outlined"
+                                    id="custom-css-outlined-input"
+                                />                                
                             </form>
                         </div>
-                        <div className="col-3">
+                        <div className="col-lg-3 col-md-3 col-sm-4 officeField">
                             <h6 style={{ color: "#004153", textDecoration: "underline" }}>Philadelphia</h6>
                             <p>1700 Market St. 29th Floor <br /> Philadelphia, PA 19103 <br />(215) 790-4100</p>
                         </div>
 
-                        <div className="col-3">
+                        <div className="col-lg-3 col-md-3 col-sm-4">
                             <h6 style={{ color: "#004153", textDecoration: "underline" }}>New York City</h6>
                             <p>100 West 33rd St. 5th Floor <br /> New York, NY 10001 <br />(646) 736-1690</p>
                         </div>
-                        <div className="col-3">
+                        <div className="col-lg-3 col-md-3 col-sm-4">
                             <h6 style={{ color: "#004153", textDecoration: "underline" }}>Harrisburg</h6>
                             <p>212 Locust St. Suite 400 <br />Harrisburg, PA 17101 <br /> (717) 231-5330</p>
                         </div>
