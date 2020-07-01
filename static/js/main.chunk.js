@@ -230,7 +230,7 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 107,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -238,7 +238,7 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107,
+      lineNumber: 108,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -246,7 +246,7 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108,
+      lineNumber: 109,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -254,7 +254,7 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
+      lineNumber: 110,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -264,7 +264,7 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 111,
       columnNumber: 25
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -272,14 +272,14 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116,
+      lineNumber: 117,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117,
+      lineNumber: 118,
       columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -287,7 +287,7 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 119,
       columnNumber: 29
     }
   }, "Culture"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -295,14 +295,14 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121,
+      lineNumber: 122,
       columnNumber: 29
     }
   }, "Article Title"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124,
+      lineNumber: 125,
       columnNumber: 29
     }
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. \xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -314,7 +314,7 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129,
+      lineNumber: 130,
       columnNumber: 26
     }
   }, "Read More")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -323,7 +323,7 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141,
+      lineNumber: 142,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -333,7 +333,7 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142,
+      lineNumber: 143,
       columnNumber: 25
     }
   }, "See All")));
@@ -365,6 +365,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_YouTube__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_YouTube__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _material_ui_icons_Instagram__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/Instagram */ "./node_modules/@material-ui/icons/Instagram.js");
 /* harmony import */ var _material_ui_icons_Instagram__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Instagram__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_icons_ArrowForwardIos__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/ArrowForwardIos */ "./node_modules/@material-ui/icons/ArrowForwardIos.js");
+/* harmony import */ var _material_ui_icons_ArrowForwardIos__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ArrowForwardIos__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _iconify_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @iconify/react */ "./node_modules/@iconify/react/dist/icon.js");
+/* harmony import */ var _iconify_react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_iconify_react__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _iconify_icons_mdi_slash_forward__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @iconify/icons-mdi/slash-forward */ "./node_modules/@iconify/icons-mdi/slash-forward.js");
+/* harmony import */ var _iconify_icons_mdi_slash_forward__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_iconify_icons_mdi_slash_forward__WEBPACK_IMPORTED_MODULE_10__);
 var _jsxFileName = "/Applications/MAMP/htdocs/wp-content/themes/new-tierney-test/react-src/src/components/Homepage-Elements/Footer/HpFooter.js";
 
 
@@ -373,8 +379,10 @@ var _jsxFileName = "/Applications/MAMP/htdocs/wp-content/themes/new-tierney-test
 
 
 
- // import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-// import { InputAdornment } from "@material-ui/core";
+
+ // import { InputAdornment } from "@material-ui/core";
+
+
 
 const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
   root: {
@@ -402,8 +410,9 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
   top: {
     backgroundColor: "#DFE0E1",
     height: "100px",
-    marginTop: "200px",
-    textAlign: "center",
+    // marginTop: "200px",
+    // textAlign: "center",
+    padding: "20px",
     ['@media (min-width: 1130px) and (max-width: 1190px)']: {
       height: "150px"
     },
@@ -422,7 +431,7 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
     margin: "0 auto",
     fontFamily: 'Montserrat, sans-serif',
     fontWeight: 700,
-    fontSize: 30,
+    fontSize: "25px",
     paddingTop: "10px"
   },
   break: {
@@ -445,16 +454,24 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
       margin: "0 auto"
     }
   },
+  btnSpan: {
+    fontFamily: 'Montserrat, sans-serif',
+    // fontWeight: 700,
+    fontSize: 30,
+    paddingRight: "10px",
+    margin: "0 auto"
+  },
   leftButton: {
     marginRight: "10px",
     marginLeft: "120px",
-    width: "130px",
     borderRadius: "50px",
     color: "#004268",
     borderColor: "#004268",
+    width: "175px",
+    paddingTop: "10px",
+    paddingBottom: "10px",
     fontFamily: 'Montserrat, sans-serif',
     fontWeight: 700,
-    fontSize: 15,
     '&:hover': {
       backgroundColor: "#004268",
       color: "white",
@@ -474,14 +491,15 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
     }
   },
   rightButton: {
-    width: "130px",
     borderRadius: "50px",
     color: "#004268",
     borderColor: "#004268",
-    marginLefT: "10px",
+    marginLeft: "12px",
+    width: "175px",
+    paddingTop: "10px",
+    paddingBottom: "10px",
     fontFamily: 'Montserrat, sans-serif',
     fontWeight: 700,
-    fontSize: 15,
     '&:hover': {
       backgroundColor: "#004268",
       color: "white",
@@ -494,7 +512,7 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
   },
   inputField: {
     backgroundColor: "#E0DDD5",
-    width: "200px",
+    width: "250px",
     height: "40px",
     borderRadius: "50px",
     border: "none",
@@ -505,29 +523,40 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
     outline: "none !important",
     outlineOffset: "none !important"
   },
-  submitEmailBtn: {
-    width: "200px",
-    height: "40px",
-    borderRadius: "50px",
-    color: "#004268",
-    borderColor: "#004268",
-    backgroundColor: "white",
-    fontFamily: 'Montserrat, sans-serif',
-    fontWeight: 700,
-    fontSize: 15,
-    marginTop: "10px",
-    outline: "none !important",
-    outlineOffset: "none !important",
-    '&:hover': {
-      backgroundColor: "#004268",
-      color: "white",
-      border: "none"
-    }
-  },
+  // submitEmailBtn: {
+  //     width: "200px",
+  //     height: "40px",
+  //     borderRadius: "50px",
+  //     color: "#004268",
+  //     borderColor: "#004268",
+  //     backgroundColor: "white",
+  //     fontFamily: 'Montserrat, sans-serif',
+  //     fontWeight: 700,
+  //     fontSize: 15,
+  //     marginTop: "10px",
+  //     outline: "none !important",
+  //     outlineOffset: "none !important",
+  //     '&:hover': {
+  //         backgroundColor: "#004268",
+  //         color: "white",
+  //         border: "none"
+  //     },
+  // },
   addresses: {
-    fontFamily: 'Montserrat, sans-serif',
-    fontWeight: 400,
-    fontSize: 15
+    fontFamily: 'Montserrat, sans-serif !important',
+    fontSize: 17
+  },
+  inputContainer: {
+    position: "relative"
+  },
+  inputBtn: {
+    position: "absolute",
+    right: "8px",
+    top: "8px",
+    bottom: "8px",
+    zIndex: 9,
+    border: "none",
+    backgroundColor: "#E0DDD5"
   }
 }));
 function FooterComponent(props) {
@@ -536,7 +565,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 174,
+      lineNumber: 199,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -544,42 +573,56 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 175,
+      lineNumber: 200,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    style: {
-      paddingTop: "20px"
-    },
+    className: "container",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 176,
+      lineNumber: 201,
       columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 202,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-lg-6 col-md-12 col-sm-12",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 203,
+      columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.topText,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 177,
-      columnNumber: 21
+      lineNumber: 204,
+      columnNumber: 29
     }
-  }, "Lorem ipsum Contact us or Careers? ipsum lorem amet."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
-    className: classes.break,
+  }, "Lorem ipsum Contact us or Careers?")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-lg-6 col-md-12 col-sm-12",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 178,
-      columnNumber: 21
+      lineNumber: 207,
+      columnNumber: 25
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.topButtons,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 179,
-      columnNumber: 21
+      lineNumber: 208,
+      columnNumber: 29
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: classes.leftButton,
@@ -588,20 +631,38 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 180,
-      columnNumber: 25
+      lineNumber: 209,
+      columnNumber: 33
     }
-  }, "Contact Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "Contact Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_iconify_react__WEBPACK_IMPORTED_MODULE_9__["Icon"], {
+    icon: _iconify_icons_mdi_slash_forward__WEBPACK_IMPORTED_MODULE_10___default.a,
+    height: "20",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 210,
+      columnNumber: 33
+    }
+  }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_iconify_react__WEBPACK_IMPORTED_MODULE_9__["Icon"], {
+    icon: _iconify_icons_mdi_slash_forward__WEBPACK_IMPORTED_MODULE_10___default.a,
+    height: "20",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 210,
+      columnNumber: 74
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: classes.rightButton,
     variant: "outline-info",
     href: "/careers",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 181,
-      columnNumber: 25
+      lineNumber: 211,
+      columnNumber: 33
     }
-  }, "Explore Jobs")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Explore Jobs")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.bottom,
     style: {
       backgroundColor: "#F1F1F1",
@@ -612,7 +673,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 187,
+      lineNumber: 218,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -623,7 +684,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 188,
+      lineNumber: 219,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -631,7 +692,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 189,
+      lineNumber: 220,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -643,14 +704,19 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 190,
+      lineNumber: 221,
       columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+    style: {
+      fontFamily: 'Montserrat, sans-serif',
+      fontWeight: 700,
+      fontSize: 20
+    },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 191,
+      lineNumber: 222,
       columnNumber: 29
     }
   }, "Sign up & stay Connected."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
@@ -658,12 +724,20 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 192,
+      lineNumber: 263,
       columnNumber: 29
     }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: classes.inputContainer,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 264,
+      columnNumber: 33
+    }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
     className: classes.inputField,
-    type: "email",
     "aria-label": "Email",
     onChange: props.handleInputChange,
     value: props.userEmail,
@@ -673,29 +747,44 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 209,
-      columnNumber: 33
+      lineNumber: 265,
+      columnNumber: 37
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "input-group-prepend",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 273,
+      columnNumber: 37
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     onClick: props.handleEmailSubmit,
-    className: classes.submitEmailBtn,
+    className: classes.inputBtn,
     type: "submit",
     id: "button",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 219,
-      columnNumber: 33
+      lineNumber: 274,
+      columnNumber: 41
     }
-  }, "Join"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ArrowForwardIos__WEBPACK_IMPORTED_MODULE_8___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 280,
+      columnNumber: 45
+    }
+  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-lg-3 col-md-3 col-sm-4",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 229,
+      lineNumber: 286,
       columnNumber: 25
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: classes.addresses,
     style: {
       color: "#004153",
@@ -705,7 +794,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 230,
+      lineNumber: 287,
       columnNumber: 29
     }
   }, "Philadelphia"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -713,21 +802,21 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 231,
+      lineNumber: 288,
       columnNumber: 29
     }
   }, "1700 Market St. 29th Floor ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 231,
+      lineNumber: 288,
       columnNumber: 89
     }
   }), " Philadelphia, PA 19103 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 231,
+      lineNumber: 288,
       columnNumber: 119
     }
   }), "(215) 790-4100")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -735,10 +824,10 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 234,
+      lineNumber: 291,
       columnNumber: 25
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: classes.addresses,
     style: {
       color: "#004153",
@@ -748,7 +837,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 235,
+      lineNumber: 292,
       columnNumber: 29
     }
   }, "New York City"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -756,21 +845,21 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 236,
+      lineNumber: 293,
       columnNumber: 29
     }
   }, "100 West 33rd St. 5th Floor ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 236,
+      lineNumber: 293,
       columnNumber: 90
     }
   }), " New York, NY 10001 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 236,
+      lineNumber: 293,
       columnNumber: 116
     }
   }), "(646) 736-1690")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -778,10 +867,10 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 238,
+      lineNumber: 295,
       columnNumber: 25
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: classes.addresses,
     style: {
       color: "#004153",
@@ -791,7 +880,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 239,
+      lineNumber: 296,
       columnNumber: 29
     }
   }, "Harrisburg"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -799,21 +888,21 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 240,
+      lineNumber: 297,
       columnNumber: 29
     }
   }, "212 Locust St. Suite 400 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 240,
+      lineNumber: 297,
       columnNumber: 87
     }
   }), "Harrisburg, PA 17101 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 240,
+      lineNumber: 297,
       columnNumber: 114
     }
   }), " (717) 231-5330")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -824,7 +913,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 245,
+      lineNumber: 302,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -832,7 +921,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 246,
+      lineNumber: 303,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -840,7 +929,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 247,
+      lineNumber: 304,
       columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
@@ -851,14 +940,14 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 248,
+      lineNumber: 305,
       columnNumber: 29
     }
   }, "Follow Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 249,
+      lineNumber: 306,
       columnNumber: 29
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -868,7 +957,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 250,
+      lineNumber: 307,
       columnNumber: 33
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Twitter__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -879,7 +968,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 252,
+      lineNumber: 309,
       columnNumber: 36
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -890,7 +979,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 253,
+      lineNumber: 310,
       columnNumber: 33
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Facebook__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -901,7 +990,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 255,
+      lineNumber: 312,
       columnNumber: 36
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -912,7 +1001,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 256,
+      lineNumber: 313,
       columnNumber: 33
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_LinkedIn__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -923,7 +1012,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 258,
+      lineNumber: 315,
       columnNumber: 36
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -934,7 +1023,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 259,
+      lineNumber: 316,
       columnNumber: 33
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_YouTube__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -945,7 +1034,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 261,
+      lineNumber: 318,
       columnNumber: 36
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -956,7 +1045,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 262,
+      lineNumber: 319,
       columnNumber: 33
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Instagram__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -967,7 +1056,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 264,
+      lineNumber: 321,
       columnNumber: 36
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -978,7 +1067,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 265,
+      lineNumber: 322,
       columnNumber: 33
     }
   }, "IPG"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -989,7 +1078,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 268,
+      lineNumber: 325,
       columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -999,15 +1088,15 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 269,
+      lineNumber: 326,
       columnNumber: 29
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 269,
-      columnNumber: 67
+      lineNumber: 326,
+      columnNumber: 68
     }
   }), "Copyright 2020 Tierney | Privacy & Terms "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "https://hellotierney.com/wp-content/uploads/2018/04/Layer-1.gif",
@@ -1022,7 +1111,7 @@ function FooterComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 270,
+      lineNumber: 327,
       columnNumber: 29
     }
   }))))));
@@ -1219,7 +1308,7 @@ const useStyles = theme => ({
     height: "auto",
     margin: "10px",
     border: "none",
-    borderRadius: "10px",
+    borderRadius: "7px",
     display: "inline-block",
     position: "relative"
   },
@@ -1228,7 +1317,7 @@ const useStyles = theme => ({
     // height: "200px",
     height: "250px",
     objectFit: "cover",
-    borderRadius: "10px"
+    borderRadius: "7px"
   },
   textOverlay: {
     position: "absolute",
@@ -1268,12 +1357,12 @@ class HpWorkSection extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         lineNumber: 48,
         columnNumber: 17
       }
-    }), console.log(this.props.client), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: classes.textOverlay,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52,
+        lineNumber: 50,
         columnNumber: 17
       }
     }, this.props.client));

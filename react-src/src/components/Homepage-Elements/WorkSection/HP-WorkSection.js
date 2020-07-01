@@ -11,7 +11,7 @@ const useStyles = theme => ({
         height: "auto",
         margin: "10px",
         border: "none",
-        borderRadius: "10px",
+        borderRadius: "7px",
         display: "inline-block",
         position: "relative",
     },
@@ -20,7 +20,7 @@ const useStyles = theme => ({
         // height: "200px",
         height: "250px",
         objectFit: "cover",
-        borderRadius: "10px"
+        borderRadius: "7px",
     },
     textOverlay: {
         position: "absolute",
@@ -47,8 +47,6 @@ class HpWorkSection extends Component {
                 className={classes.cardContainer}>
                 <CardMedia className={classes.cardImg}
                     image={this.props.client_image} alt={this.props.client} />
-                    {console.log(this.props.client)}
-
                 <div className={classes.textOverlay}>{this.props.client}</div>
             </Card>
         )

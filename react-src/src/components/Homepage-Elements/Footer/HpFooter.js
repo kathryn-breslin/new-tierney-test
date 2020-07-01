@@ -6,8 +6,10 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import InstagramIcon from '@material-ui/icons/Instagram';
-// import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 // import { InputAdornment } from "@material-ui/core";
+import { Icon, InlineIcon } from '@iconify/react';
+import slashForward from '@iconify/icons-mdi/slash-forward';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -36,8 +38,9 @@ const useStyles = makeStyles((theme) => ({
     top: {
         backgroundColor: "#DFE0E1",
         height: "100px",
-        marginTop: "200px",
-        textAlign: "center",
+        // marginTop: "200px",
+        // textAlign: "center",
+        padding: "20px",
         ['@media (min-width: 1130px) and (max-width: 1190px)']: {
             height: "150px"
         },
@@ -57,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
         margin: "0 auto",
         fontFamily: 'Montserrat, sans-serif',
         fontWeight: 700,
-        fontSize: 30,
+        fontSize: "25px",
         paddingTop: "10px"
     },
     break: {
@@ -80,16 +83,24 @@ const useStyles = makeStyles((theme) => ({
             margin: "0 auto"
         },
     },
+    btnSpan: {
+        fontFamily: 'Montserrat, sans-serif',
+        // fontWeight: 700,
+        fontSize: 30,
+        paddingRight: "10px",
+        margin: "0 auto"
+    },
     leftButton: {
         marginRight: "10px",
         marginLeft: "120px",
-        width: "130px",
         borderRadius: "50px",
         color: "#004268",
         borderColor: "#004268",
+        width: "175px",
+        paddingTop: "10px",
+        paddingBottom: "10px",
         fontFamily: 'Montserrat, sans-serif',
         fontWeight: 700,
-        fontSize: 15,
         '&:hover': {
             backgroundColor: "#004268",
             color: "white",
@@ -110,14 +121,15 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     rightButton: {
-        width: "130px",
         borderRadius: "50px",
         color: "#004268",
         borderColor: "#004268",
-        marginLefT: "10px",
+        marginLeft: "12px",
+        width: "175px",
+        paddingTop: "10px",
+        paddingBottom: "10px",
         fontFamily: 'Montserrat, sans-serif',
         fontWeight: 700,
-        fontSize: 15,
         '&:hover': {
             backgroundColor: "#004268",
             color: "white",
@@ -130,7 +142,7 @@ const useStyles = makeStyles((theme) => ({
     },
     inputField: {
         backgroundColor: "#E0DDD5",
-        width: "200px",
+        width: "250px",
         height: "40px",
         borderRadius: "50px",
         border: "none",
@@ -141,30 +153,43 @@ const useStyles = makeStyles((theme) => ({
         outline: "none !important",
         outlineOffset: "none !important",
     },
-    submitEmailBtn: {
-        width: "200px",
-        height: "40px",
-        borderRadius: "50px",
-        color: "#004268",
-        borderColor: "#004268",
-        backgroundColor: "white",
-        fontFamily: 'Montserrat, sans-serif',
-        fontWeight: 700,
-        fontSize: 15,
-        marginTop: "10px",
-        outline: "none !important",
-        outlineOffset: "none !important",
-        '&:hover': {
-            backgroundColor: "#004268",
-            color: "white",
-            border: "none"
-        },
-    },
+    // submitEmailBtn: {
+    //     width: "200px",
+    //     height: "40px",
+    //     borderRadius: "50px",
+    //     color: "#004268",
+    //     borderColor: "#004268",
+    //     backgroundColor: "white",
+    //     fontFamily: 'Montserrat, sans-serif',
+    //     fontWeight: 700,
+    //     fontSize: 15,
+    //     marginTop: "10px",
+    //     outline: "none !important",
+    //     outlineOffset: "none !important",
+    //     '&:hover': {
+    //         backgroundColor: "#004268",
+    //         color: "white",
+    //         border: "none"
+    //     },
+    // },
     addresses: {
-        fontFamily: 'Montserrat, sans-serif',
-        fontWeight: 400,
-        fontSize: 15,
+        fontFamily: 'Montserrat, sans-serif !important',
+        fontSize: 17,
     },
+
+    inputContainer: {
+        position: "relative"
+    },
+    inputBtn: {
+        position: "absolute",
+        right: "8px",
+        top: "8px",
+        bottom: "8px",
+        zIndex: 9,
+        border: "none",
+        backgroundColor: "#E0DDD5"
+
+    }
 }));
 
 
@@ -173,24 +198,34 @@ export default function FooterComponent(props) {
     return (
         <div>
             <div className={classes.top}>
-                <div style={{ paddingTop: "20px" }}>
-                    <div className={classes.topText}>Lorem ipsum Contact us or Careers? ipsum lorem amet.</div>
-                    <br className={classes.break} />
-                    <div className={classes.topButtons}>
-                        <Button className={classes.leftButton} variant="light" href="/contact">Contact Us</Button>
-                        <Button className={classes.rightButton} variant="outline-info" href="/careers">Explore Jobs</Button>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6 col-md-12 col-sm-12">
+                            <div className={classes.topText}>Lorem ipsum Contact us or Careers?</div>
+                        </div>
+                        {/* <br className={classes.break} /> */}
+                        <div className="col-lg-6 col-md-12 col-sm-12">
+                            <div className={classes.topButtons}>
+                                <Button className={classes.leftButton} variant="light" href="/contact">Contact Us</Button>
+                                <Icon icon={slashForward} height="20" /> <Icon icon={slashForward} height="20" />
+                                <Button className={classes.rightButton} variant="outline-info" href="/careers">Explore Jobs</Button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
 
             <div className={classes.bottom} style={{ backgroundColor: "#F1F1F1", height: "400px", marginLeft: "auto", marginRight: "auto" }}>
                 <div className="container" style={{ paddingTop: "50px" }}>
                     <div className="row">
                         <div className="col-lg-3 col-md-12 col-sm-12" style={{ marginBottom: "50px", textAlign: "center" }}>
-                            <h6>Sign up &amp; stay Connected.</h6>
-                            <form className={classes.root}>
-                                {/* <TextField className={classes.emailField} label="Email"
+                            <h6 style={{
+                                fontFamily: 'Montserrat, sans-serif',
+                                fontWeight: 700,
+                                fontSize: 20,
+                            }}>Sign up &amp; stay Connected.</h6>
+                            {/* <form className={classes.root}> */}
+                            {/* <TextField className={classes.emailField} label="Email"
                                     InputProps={{
                                         endAdornment: (
                                             <InputAdornment>
@@ -206,7 +241,7 @@ export default function FooterComponent(props) {
                                             </InputAdornment>
                                         )
                                     }}/> */}
-                                <input
+                            {/* <input
                                     className={classes.inputField}
                                     type="email"
                                     aria-label="Email"
@@ -224,19 +259,41 @@ export default function FooterComponent(props) {
                                 >
                                     Join
                             </button>
+                            </form> */}
+                            <form className={classes.root}>
+                                <div className={classes.inputContainer}>
+                                    <input type="text"
+                                        className={classes.inputField}
+                                        aria-label="Email"
+                                        onChange={props.handleInputChange}
+                                        value={props.userEmail}
+                                        name="userEmail"
+                                        placeholder="Enter Email Here"
+                                        id="userEmail" />
+                                    <div className="input-group-prepend">
+                                        <button
+                                            onClick={props.handleEmailSubmit}
+                                            className={classes.inputBtn}
+                                            type="submit"
+                                            id="button"
+                                        >
+                                            <ArrowForwardIosIcon />
+                                        </button>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                         <div className="col-lg-3 col-md-3 col-sm-4">
-                            <h6 className={classes.addresses} style={{ color: "#004153", textDecoration: "underline", fontWeight: 700 }}>Philadelphia</h6>
+                            <span className={classes.addresses} style={{ color: "#004153", textDecoration: "underline", fontWeight: 700 }}>Philadelphia</span>
                             <p className={classes.addresses}>1700 Market St. 29th Floor <br /> Philadelphia, PA 19103 <br />(215) 790-4100</p>
                         </div>
 
                         <div className="col-lg-3 col-md-3 col-sm-4">
-                            <h6 className={classes.addresses} style={{ color: "#004153", textDecoration: "underline", fontWeight: 700 }}>New York City</h6>
+                            <span className={classes.addresses} style={{ color: "#004153", textDecoration: "underline", fontWeight: 700 }}>New York City</span>
                             <p className={classes.addresses}>100 West 33rd St. 5th Floor <br /> New York, NY 10001 <br />(646) 736-1690</p>
                         </div>
                         <div className="col-lg-3 col-md-3 col-sm-4">
-                            <h6 className={classes.addresses} style={{ color: "#004153", textDecoration: "underline", fontWeight: 700 }}>Harrisburg</h6>
+                            <span className={classes.addresses} style={{ color: "#004153", textDecoration: "underline", fontWeight: 700 }}>Harrisburg</span>
                             <p className={classes.addresses}>212 Locust St. Suite 400 <br />Harrisburg, PA 17101 <br /> (717) 231-5330</p>
                         </div>
                     </div>
@@ -249,24 +306,24 @@ export default function FooterComponent(props) {
                             <div>
                                 <p style={{
                                     display: "inline-block",
-                                }}><TwitterIcon style={{color: "#004268", fontSize: 30}} /></p>
+                                }}><TwitterIcon style={{ color: "#004268", fontSize: 30 }} /></p>
                                 <p style={{
                                     display: "inline-block", marginLeft: "10px"
-                                }}><FacebookIcon style={{color: "#004268", fontSize: 30}} /></p>
+                                }}><FacebookIcon style={{ color: "#004268", fontSize: 30 }} /></p>
                                 <p style={{
                                     display: "inline-block", marginLeft: "10px"
-                                }}><LinkedInIcon style={{color: "#004268", fontSize: 30}} /></p>
+                                }}><LinkedInIcon style={{ color: "#004268", fontSize: 30 }} /></p>
                                 <p style={{
                                     display: "inline-block", marginLeft: "10px"
-                                }}><YouTubeIcon style={{color: "#004268", fontSize: 30}} /></p>
+                                }}><YouTubeIcon style={{ color: "#004268", fontSize: 30 }} /></p>
                                 <p style={{
-                                    display: "inline-block", marginLeft: "10px" 
-                                }}><InstagramIcon style={{color: "#004268", fontSize: 30}} /></p> 
-                                <p style={{ display: "inline-block", marginLeft: "10px"}}>IPG</p>
+                                    display: "inline-block", marginLeft: "10px"
+                                }}><InstagramIcon style={{ color: "#004268", fontSize: 30 }} /></p>
+                                <p style={{ display: "inline-block", marginLeft: "10px" }}>IPG</p>
                             </div>
                         </div>
                         <div className="col-7" style={{ textAlign: "right" }}>
-                            <p style={{ display: "inline-block"}}><br />Copyright 2020 Tierney | Privacy &amp; Terms </p>
+                            <p style={{ display: "inline-block" }}><br />Copyright 2020 Tierney | Privacy &amp; Terms </p>
                             <img
                                 src="https://hellotierney.com/wp-content/uploads/2018/04/Layer-1.gif"
                                 width="100"
