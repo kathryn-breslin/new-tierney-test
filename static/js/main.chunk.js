@@ -141,13 +141,14 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
     boxShadow: "none"
   },
   cardImg: {
-    // width: "85%",
+    width: "100%",
     height: "400px",
-    left: "200px",
+    left: "155px",
     position: "relative",
     zIndex: 1,
     margin: "0 auto",
     borderRadius: "7px",
+    objectFit: "cover",
     border: "none",
     ['@media (min-width: 992px) and (max-width: 1130px)']: {
       width: "800px",
@@ -166,7 +167,7 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
     width: "750px",
     position: "relative",
     top: "-60px",
-    left: "-200px",
+    left: "-180px",
     backgroundColor: "#F6F5F3",
     padding: "20px",
     zIndex: 2,
@@ -218,8 +219,8 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
     top: "-105px",
     '&:hover': {
       backgroundColor: "#004268",
-      color: "white",
-      border: "none"
+      color: "white" // border: "none"
+
     }
   }
 });
@@ -230,7 +231,7 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107,
+      lineNumber: 108,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -238,7 +239,7 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108,
+      lineNumber: 109,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -246,7 +247,7 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
+      lineNumber: 110,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -254,17 +255,17 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 111,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: classes.cardImg,
-    image: "https://hellotierney.com/retail/wp-content/uploads/2020/02/thought-leadership_hero-image_1440x500@2x-scaled.jpg",
+    image: "https://hellotierney.com/wp-content/uploads/2020/06/Screen-Shot-2020-06-09-at-1.36.01-PM.png",
     title: "featured article title",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111,
+      lineNumber: 112,
       columnNumber: 25
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -272,14 +273,14 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117,
+      lineNumber: 118,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 119,
       columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -287,7 +288,7 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119,
+      lineNumber: 120,
       columnNumber: 29
     }
   }, "Culture"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -295,14 +296,14 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122,
+      lineNumber: 123,
       columnNumber: 29
     }
-  }, "Article Title"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, "Tierney Diversity Initiatives"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125,
+      lineNumber: 126,
       columnNumber: 29
     }
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. \xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -314,7 +315,7 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130,
+      lineNumber: 131,
       columnNumber: 26
     }
   }, "Read More")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -323,7 +324,7 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142,
+      lineNumber: 143,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -333,7 +334,7 @@ function FeaturedArticle() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143,
+      lineNumber: 144,
       columnNumber: 25
     }
   }, "See All")));
@@ -1148,8 +1149,8 @@ var _jsxFileName = "/Applications/MAMP/htdocs/wp-content/themes/new-tierney-test
 
 const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])({
   missionContainer: {
-    marginTop: "300px",
-    marginBottom: "300px",
+    marginTop: "200px",
+    marginBottom: "200px",
     textAlign: "center",
     justifyContent: "center",
     width: "50%",
@@ -1178,8 +1179,8 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
     fontWeight: 700,
     '&:hover': {
       backgroundColor: "#004268",
-      color: "white",
-      border: "none"
+      color: "white" // border: "none"
+
     }
   }
 });
@@ -1300,7 +1301,8 @@ var _jsxFileName = "/Applications/MAMP/htdocs/wp-content/themes/new-tierney-test
 
 
 
-
+ // import Card from 'react-bootstrap/Card'
+// import "./HP-WorkSection.css";
 
 const useStyles = theme => ({
   cardContainer: {
@@ -1310,23 +1312,33 @@ const useStyles = theme => ({
     border: "none",
     borderRadius: "7px",
     display: "inline-block",
-    position: "relative"
+    position: "relative",
+    backgroundColor: "#004268",
+    '&:hover :nth-child(2)': {
+      opacity: 1,
+      backgroundColor: "#004268"
+    }
   },
   cardImg: {
     width: "250px",
-    // height: "200px",
     height: "250px",
     objectFit: "cover",
     borderRadius: "7px"
   },
   textOverlay: {
     position: "absolute",
+    textAlign: "left",
     color: "white",
     fontFamily: 'Montserrat, sans-serif',
     fontWeight: 700,
-    fontSize: "20px",
-    top: '20px',
-    left: '20px'
+    fontSize: "30px",
+    top: '0px',
+    left: '0px',
+    opacity: 0,
+    width: "250px",
+    height: "250px",
+    paddingTop: "20px",
+    paddingLeft: "20px"
   }
 });
 
@@ -1341,10 +1353,11 @@ class HpWorkSection extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     } = this.props;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
       className: classes.cardContainer,
+      onClick: this.props.onMouseOver,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46,
+        lineNumber: 60,
         columnNumber: 13
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -1354,7 +1367,7 @@ class HpWorkSection extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 48,
+        lineNumber: 64,
         columnNumber: 17
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1362,7 +1375,7 @@ class HpWorkSection extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 50,
+        lineNumber: 66,
         columnNumber: 17
       }
     }, this.props.client));
@@ -1510,6 +1523,7 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_6__["
     border: "none",
     fontWeight: 700,
     fontSize: 20,
+    textTransform: "none",
     '&:hover': {
       backgroundColor: "white",
       color: "#DB2416"
@@ -1543,14 +1557,14 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 80,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 88,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -1559,7 +1573,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 89,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__["Link"], {
@@ -1573,7 +1587,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89,
+      lineNumber: 90,
       columnNumber: 21
     }
   }, "Home ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ArrowForwardIos__WEBPACK_IMPORTED_MODULE_10___default.a, {
@@ -1581,7 +1595,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91,
+      lineNumber: 92,
       columnNumber: 29
     }
   }), " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -1590,7 +1604,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93,
+      lineNumber: 94,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__["Link"], {
@@ -1604,7 +1618,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94,
+      lineNumber: 95,
       columnNumber: 21
     }
   }, "Work ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ArrowForwardIos__WEBPACK_IMPORTED_MODULE_10___default.a, {
@@ -1612,7 +1626,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96,
+      lineNumber: 97,
       columnNumber: 29
     }
   }), " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -1621,7 +1635,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
+      lineNumber: 99,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__["Link"], {
@@ -1635,7 +1649,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99,
+      lineNumber: 100,
       columnNumber: 21
     }
   }, "About ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ArrowForwardIos__WEBPACK_IMPORTED_MODULE_10___default.a, {
@@ -1643,7 +1657,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101,
+      lineNumber: 102,
       columnNumber: 30
     }
   }), " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -1652,7 +1666,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103,
+      lineNumber: 104,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__["Link"], {
@@ -1666,7 +1680,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104,
+      lineNumber: 105,
       columnNumber: 21
     }
   }, "Latest ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ArrowForwardIos__WEBPACK_IMPORTED_MODULE_10___default.a, {
@@ -1674,7 +1688,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 107,
       columnNumber: 31
     }
   }), " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -1683,7 +1697,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108,
+      lineNumber: 109,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__["Link"], {
@@ -1697,7 +1711,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
+      lineNumber: 110,
       columnNumber: 21
     }
   }, "Careers ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ArrowForwardIos__WEBPACK_IMPORTED_MODULE_10___default.a, {
@@ -1705,7 +1719,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111,
+      lineNumber: 112,
       columnNumber: 32
     }
   }), " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -1714,7 +1728,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113,
+      lineNumber: 114,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__["Link"], {
@@ -1728,7 +1742,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114,
+      lineNumber: 115,
       columnNumber: 21
     }
   }, "Contact ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ArrowForwardIos__WEBPACK_IMPORTED_MODULE_10___default.a, {
@@ -1736,7 +1750,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116,
+      lineNumber: 117,
       columnNumber: 32
     }
   }), " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1748,7 +1762,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 119,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -1760,28 +1774,21 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119,
+      lineNumber: 120,
       columnNumber: 21
     }
   }))));
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 133,
-      columnNumber: 9
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Navbar"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Navbar"], {
     style: {
-      marginLeft: 30,
+      marginLeft: "-20px",
       marginTop: 30,
       display: "inline-block"
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134,
+      lineNumber: 135,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Navbar"].Brand, {
@@ -1789,7 +1796,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135,
+      lineNumber: 136,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -1801,21 +1808,20 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136,
+      lineNumber: 137,
       columnNumber: 21
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Nav"], {
     activeKey: "/",
     style: {
-      marginRight: 30,
-      marginTop: 90,
+      marginTop: 60,
       display: "inline-block",
       float: "right"
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145,
+      lineNumber: 146,
       columnNumber: 13
     }
   }, ['right'].map(anchor => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
@@ -1823,7 +1829,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147,
+      lineNumber: 148,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -1832,7 +1838,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148,
+      lineNumber: 149,
       columnNumber: 25
     }
   }, "Menu", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_11___default.a, {
@@ -1843,7 +1849,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148,
+      lineNumber: 149,
       columnNumber: 99
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Drawer__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -1853,7 +1859,7 @@ function NavbarComp() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149,
+      lineNumber: 150,
       columnNumber: 25
     }
   }, list(anchor))))));
@@ -2117,6 +2123,7 @@ var _jsxFileName = "/Applications/MAMP/htdocs/wp-content/themes/new-tierney-test
 
 
 
+
 const useStyles = theme => ({
   workButton: {
     alignContent: "right",
@@ -2133,8 +2140,8 @@ const useStyles = theme => ({
     marginRight: "1%",
     '&:hover': {
       backgroundColor: "#004268",
-      color: "white",
-      border: "none"
+      color: "white" // border: "none"
+
     }
   }
 });
@@ -2142,6 +2149,10 @@ const useStyles = theme => ({
 class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   constructor(props) {
     super(props);
+
+    this.onMouseOver = () => this.setState({
+      shadow: 3
+    });
 
     this.handleInputChange = event => {
       event.preventDefault();
@@ -2176,47 +2187,101 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     this.loadIcon = this.loadIcon.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleEmailSubmit = this.handleEmailSubmit.bind(this);
+    this.testfunction = this.testfunction.bind(this);
   }
 
   componentDidMount() {
-    axios__WEBPACK_IMPORTED_MODULE_9___default.a.get("https://hellotierney.com/wp-json/acf/v3/work").then(response => response.data).then(dataSet => {
-      this.setState({
-        data: dataSet,
-        loaded: true
-      });
+    this.setState({
+      data: [{
+        id: 1,
+        image: "https://hellotierney.com/wp-content/uploads/2020/07/section-navigation.jpg",
+        title: "Xfinity Hangouts"
+      }, {
+        id: 2,
+        image: "https://hellotierney.com/wp-content/uploads/2019/05/Champion_Hero_Image_1904x1120.jpg",
+        title: "Champion"
+      }, {
+        id: 3,
+        image: "https://hellotierney.com/wp-content/uploads/2019/05/IBX_Hero_Image_1904x1120.jpg",
+        title: "Independence Blue Cross"
+      }, {
+        id: 4,
+        image: "https://hellotierney.com/wp-content/uploads/2017/05/grid-image.jpg",
+        title: "Fine Wine and Good Spirits"
+      }],
+      loaded: true
     });
-  }
+  } // componentDidMount() {
+  //     // axios.get("https://hellotierney.com/wp-json/acf/v3/work")
+  //     //     .then((response) => response.data)
+  //     //     .then(dataSet => {
+  //     //         this.setState({
+  //     //             data: dataSet,
+  //     //             loaded: true
+  //     //         })
+  //     //     })
+  //     {this.loadIcon()}
+  // }
+
 
   loadIcon() {
     if (this.state.loaded) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, this.state.data.map(item => {
-        if (item.acf.featured_post[0] === "featured") {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Elements_WorkSection_HP_WorkSection_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            client: item.acf.case_study_hero_client,
-            client_image: item.acf.case_study_hero_image,
-            id: item.index,
-            key: item.index,
-            __self: this,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 72,
-              columnNumber: 33
-            }
-          });
-        }
-      }));
-    } else {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "https://i.imgur.com/5DrQIHe.gif",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 89,
-          columnNumber: 21
-        }
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "    ", this.state.data.map(item => {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Elements_WorkSection_HP_WorkSection_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          client: item.title,
+          client_image: item.image,
+          id: item.id,
+          key: item.id,
+          onMouseOver: this.onMouseOver,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 100,
+            columnNumber: 29
+          }
+        });
       }));
     }
   }
+
+  testfunction() {
+    console.log("Working!");
+  } //     if (this.state.loaded) {
+  //         return (
+  //             <>
+  //                 {/* <div className="HpWorkSection" style={{ display: "flex", justifyContent: "center" }}> */}
+  //                 {this.state.data.map(item => {
+  //                     if (item.acf.featured_post[0] === "featured") {
+  //                         return (
+  //                             <HpWorkSection
+  //                                 // client={item.acf.case_study_hero_client}
+  //                                 // client_image={item.acf.case_study_hero_image}
+  //                                 // id={item.index}
+  //                                 // key={item.index}
+  //                                 client={title}
+  //                                 client_image={image}
+  //                                 id={item.id}
+  //                                 key={item.id}
+  //                             />
+  //                         )
+  //                     }
+  //                 })}
+  //                 {/* </div> */}
+  //             </>
+  //         )
+  //     }
+  //     else {
+  //         return (
+  //             <>
+  //                 <img src="https://i.imgur.com/5DrQIHe.gif" />
+  //                 {/* Using this GIF as a placeholder */}
+  //                 {/* Image Source: https://imgur.com/gallery/kKc4E */}
+  //                 {/* All Credit to 'iactuallychangedmyusername' on August 27, 2014 */}
+  //             </>
+  //         )
+  //     }
+  // }
+
 
   render() {
     const {
@@ -2226,17 +2291,41 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 127,
-        columnNumber: 13
+        lineNumber: 189,
+        columnNumber: 17
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "container",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 190,
+        columnNumber: 21
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "row",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 191,
+        columnNumber: 25
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-12",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 192,
+        columnNumber: 29
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 128,
-        columnNumber: 17
+        lineNumber: 193,
+        columnNumber: 33
       }
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "container d-flex justify-content-center",
       style: {
         marginTop: "10%",
@@ -2245,16 +2334,16 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 130,
-        columnNumber: 17
+        lineNumber: 198,
+        columnNumber: 21
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "row",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 131,
-        columnNumber: 21
+        lineNumber: 199,
+        columnNumber: 25
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "col-lg-6 col-md-6 col-sm-6",
@@ -2264,29 +2353,29 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 132,
-        columnNumber: 25
+        lineNumber: 200,
+        columnNumber: 29
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
       style: {
         fontFamily: 'Montserrat, sans-serif',
         fontWeight: 700,
         fontSize: 40,
-        paddingTop: "23%",
+        paddingTop: "30%",
         letterSpacing: "1px"
       },
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 133,
-        columnNumber: 29
+        lineNumber: 201,
+        columnNumber: 33
       }
     }, "Hello, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 136,
-        columnNumber: 39
+        lineNumber: 204,
+        columnNumber: 43
       }
     }), " we're Tierney."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       style: {
@@ -2297,8 +2386,8 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 137,
-        columnNumber: 29
+        lineNumber: 205,
+        columnNumber: 33
       }
     }, " Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "col-lg-6 col-md-6 col-sm-6",
@@ -2308,32 +2397,32 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 139,
-        columnNumber: 25
+        lineNumber: 207,
+        columnNumber: 29
       }
     }, this.loadIcon()))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "container",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 144,
-        columnNumber: 17
+        lineNumber: 213,
+        columnNumber: 21
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "row",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 145,
-        columnNumber: 21
+        lineNumber: 214,
+        columnNumber: 25
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "col-12 d-flex justify-content-end",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 146,
-        columnNumber: 25
+        lineNumber: 215,
+        columnNumber: 29
       }
     }, this.state.loaded ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
       className: classes.workButton,
@@ -2342,22 +2431,22 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 148,
-        columnNumber: 58
+        lineNumber: 217,
+        columnNumber: 54
       }
     }, "See All") : null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Elements_MissionStatement_HP_Mission_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 153,
-        columnNumber: 17
+        lineNumber: 222,
+        columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Elements_FeaturedArticle_HP_FeaturedArticle_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 154,
-        columnNumber: 17
+        lineNumber: 223,
+        columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Elements_Footer_HpFooter_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
       userEmail: this.state.userEmail,
@@ -2366,8 +2455,8 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 155,
-        columnNumber: 17
+        lineNumber: 224,
+        columnNumber: 21
       }
     }));
   }
@@ -2661,5 +2750,5 @@ module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/wp-content/th
 
 /***/ })
 
-},[[0,"runtime-main",0]]]);
+},[[0,"runtime-main",1]]]);
 //# sourceMappingURL=main.chunk.js.map

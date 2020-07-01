@@ -9,8 +9,8 @@ import Typography from '@material-ui/core/Typography';
 //Pull statement from API
 const useStyles = makeStyles({
     missionContainer: {
-        marginTop: "300px",
-        marginBottom: "300px",
+        marginTop: "200px",
+        marginBottom: "200px",
         textAlign: "center",
         justifyContent: "center",
         width: "50%",
@@ -41,7 +41,7 @@ const useStyles = makeStyles({
         '&:hover': {
             backgroundColor: "#004268",
             color: "white",
-            border: "none"
+            // border: "none"
         },
     }
 

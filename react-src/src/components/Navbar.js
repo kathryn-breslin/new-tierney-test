@@ -51,6 +51,7 @@ const useStyles = makeStyles({
         border: "none",
         fontWeight: 700,
         fontSize: 20,
+        textTransform: "none",
     '&:hover': {
         backgroundColor: "white",
         color: "#DB2416"
@@ -130,8 +131,8 @@ export default function NavbarComp() {
     );
 
     return (
-        <div>
-            <Navbar style={{marginLeft: 30, marginTop: 30, display: "inline-block"}}>
+        <>
+            <Navbar style={{marginLeft: "-20px", marginTop: 30, display: "inline-block"}}>
                 <Navbar.Brand href="/">
                     <img
                         src="https://hellotierney.com/wp-content/uploads/2018/04/Layer-1.gif"
@@ -142,10 +143,10 @@ export default function NavbarComp() {
                     />
                 </Navbar.Brand>
             </Navbar>
-            <Nav activeKey="/" style={{marginRight: 30, marginTop: 90, display: "inline-block", float: "right"}}>
+            <Nav activeKey="/" style={{ marginTop: 60, display: "inline-block", float: "right"}}>
                 {['right',].map((anchor) => (
                     <React.Fragment key={anchor}>
-                        <Button className={classes.menu} onClick={toggleDrawer(anchor, true)}>Menu<AddIcon style={{ color: "#DB2416", marginLeft: 5 }} /></Button>
+                        <Button className={classes.menu} onClick={toggleDrawer(anchor, true)}>Menu<AddIcon style={{ color: "#DB2416", marginLeft: 5}} /></Button>
                         <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
                             {list(anchor)}
                         </Drawer>
@@ -153,7 +154,7 @@ export default function NavbarComp() {
                 ))}
 
             </Nav>
-        </div>
+        </>
     );
 }
 

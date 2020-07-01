@@ -12,13 +12,14 @@ const useStyles = makeStyles({
         boxShadow: "none"
     },
     cardImg: {
-        // width: "85%",
+        width: "100%",
         height: "400px",
-        left: "200px",
+        left: "155px",
         position: "relative",
         zIndex: 1,
         margin: "0 auto",
         borderRadius: "7px",
+        objectFit: "cover",
         border: "none",
         ['@media (min-width: 992px) and (max-width: 1130px)']: {
             width: "800px",
@@ -37,7 +38,7 @@ const useStyles = makeStyles({
         width: "750px",
         position: "relative",
         top: "-60px",
-        left: "-200px",
+        left: "-180px",
         backgroundColor: "#F6F5F3",
         padding: "20px",
         zIndex: 2,
@@ -93,7 +94,7 @@ const useStyles = makeStyles({
         '&:hover': {
             backgroundColor: "#004268",
             color: "white",
-            border: "none"
+            // border: "none"
         },
     }
 });
@@ -109,7 +110,7 @@ export default function FeaturedArticle() {
                 <div className="col-12">
                     <Card className={classes.cardContainer}>
                         <CardMedia className={classes.cardImg}
-                            image="https://hellotierney.com/retail/wp-content/uploads/2020/02/thought-leadership_hero-image_1440x500@2x-scaled.jpg"
+                            image="https://hellotierney.com/wp-content/uploads/2020/06/Screen-Shot-2020-06-09-at-1.36.01-PM.png"
                             title="featured article title"
                         />
                     </Card>
@@ -120,7 +121,7 @@ export default function FeaturedArticle() {
                                 Culture
                     </Typography>
                             <Typography className={classes.title}>
-                                Article Title
+                                Tierney Diversity Initiatives
                     </Typography>
                             <Typography>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
