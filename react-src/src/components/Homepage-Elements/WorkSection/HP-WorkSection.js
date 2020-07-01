@@ -7,17 +7,18 @@ import CardMedia from '@material-ui/core/CardMedia';
 
 const useStyles = theme => ({
     cardContainer: {
-        width: "350px",
+        width: "250px",
         height: "auto",
-        margin: "20px",
+        margin: "10px",
         border: "none",
         borderRadius: "10px",
         display: "inline-block",
         position: "relative",
     },
     cardImg: {
-        width: "350px",
-        height: "200px",
+        width: "250px",
+        // height: "200px",
+        height: "250px",
         objectFit: "cover",
         borderRadius: "10px"
     },
@@ -46,8 +47,9 @@ class HpWorkSection extends Component {
                 className={classes.cardContainer}>
                 <CardMedia className={classes.cardImg}
                     image={this.props.client_image} alt={this.props.client} />
+                    {console.log(this.props.client)}
 
-                    <div className={classes.textOverlay}>{this.props.client}</div>
+                <div className={classes.textOverlay}>{this.props.client}</div>
             </Card>
         )
     }

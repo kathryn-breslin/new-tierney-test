@@ -11,13 +11,13 @@ const useStyles = makeStyles({
         boxShadow: "none"
     },
     cardImg: {
-        width: "800px",
+        // width: "85%",
         height: "400px",
         left: "200px",
         position: "relative",
         zIndex: 1,
         margin: "0 auto",
-        borderRadius: "10px",
+        borderRadius: "7px",
         border: "none",
         ['@media (min-width: 992px) and (max-width: 1130px)']: {
             width: "800px",
@@ -38,7 +38,7 @@ const useStyles = makeStyles({
         top: "-60px",
         left: "-200px",
         backgroundColor: "#F6F5F3",
-        padding: "50px",
+        padding: "20px",
         zIndex: 2,
         margin: "0 auto",
         textAlign: "left",
@@ -71,16 +71,24 @@ const useStyles = makeStyles({
         fontFamily: 'Montserrat, sans-serif',
         fontWeight: 700,
         fontSize: 30,
-        paddingTop: "10px"
+        paddingTop: "5px"
     }, 
     actionDiv: {
-        textAlign: "center"
+        // textAlign: "center", 
+
     },
     seeAllButton: {
-        width: "130px",
+        position: "relative",
+        width: "175px",
+        paddingTop: "10px",
+        paddingBottom: "10px",
+        fontFamily: 'Montserrat, sans-serif',
+        fontWeight: 700,        
         borderRadius: "50px",
         color: "#004268",
         borderColor: "#004268",
+        zIndex: 3, 
+        top: "-105px",
         '&:hover': {
             backgroundColor: "#004268",
             color: "white",
@@ -128,14 +136,14 @@ export default function FeaturedArticle() {
                     </Card>
                 </div>
             </div>
-            <div className="row">
-                <div className="col-12">
-                    <div  className={classes.actionDiv}>
+            {/* <div className="row">
+                <div className="col-12"> */}
+                    <div  className={classes.actionDiv} className="d-flex justify-content-end">
                         <Button  className={classes.seeAllButton}
                             variant="outline" href="/latest">See All</Button>
                     </div>
-                </div>
-            </div>
+                {/* </div> */}
+        {/* //     </div> */}
         </div>
     )
 }

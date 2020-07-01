@@ -13,7 +13,7 @@ const useStyles = makeStyles({
         marginBottom: "300px",
         textAlign: "center",
         justifyContent: "center",
-        width: "65%",
+        width: "50%",
         margin: "0 auto",
     },
     cardContainer: {
@@ -24,16 +24,20 @@ const useStyles = makeStyles({
         margin: "0 auto",
         fontFamily: 'Montserrat, sans-serif',
         fontWeight: 700,
-        fontSize: 30,
+        fontSize: 35,
     }
     ,
     actionButton: {
         textAlign: "center !important",
         margin: "0 auto",
-        width: "130px",
+        width: "175px",
         borderRadius: "50px",
         color: "#004268",
         borderColor: "#004268",
+        paddingTop: "10px",
+        paddingBottom: "10px",
+        fontFamily: 'Montserrat, sans-serif',
+        fontWeight: 700,
         '&:hover': {
             backgroundColor: "#004268",
             color: "white",

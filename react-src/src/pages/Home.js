@@ -6,7 +6,32 @@ import HpWorkSection from "../components/Homepage-Elements/WorkSection/HP-WorkSe
 import HpMission from "../components/Homepage-Elements/MissionStatement/HP-Mission.js";
 import HpFeaturedArticle from "../components/Homepage-Elements/FeaturedArticle/HP-FeaturedArticle.js";
 import HpFooter from "../components/Homepage-Elements/Footer/HpFooter.js";
+import { withStyles } from '@material-ui/core/styles';
 import axios from "axios";
+
+const useStyles = theme => ({
+    workButton: {
+        alignContent: "right",
+        // marginRight: "-1300px", 
+        marginTop: "20px",
+        borderRadius: "50px",
+        color: "#004268",
+        borderColor: "#004268",
+        width: "175px",
+        paddingTop: "10px",
+        paddingBottom: "10px",
+        fontFamily: 'Montserrat, sans-serif',
+        fontWeight: 700,
+        marginRight: "1%",
+        '&:hover': {
+            backgroundColor: "#004268",
+            color: "white",
+            border: "none"
+        },
+    }
+});
+
+
 class Home extends Component {
 
     constructor(props) {
@@ -96,28 +121,33 @@ class Home extends Component {
 
 
     render() {
+        const { classes } = this.props;
 
         return (
             <div>
                 <Navbar />
-                <JumboComp />
-
-                <div className="HpWorkSection" style={{ textAlign: "center" }}>
-                    {this.loadIcon()}
-                    <br />
-
-                    <div className="HpWorkSectionBtn">
-                        {this.state.loaded ? <Button style={{
-                            alignContent: "right",
-                            // marginRight: "-1300px", 
-                            marginTop: "20px",
-                            width: "130px",
-                            borderRadius: "50px",
-                            color: "#004268",
-                            borderColor: "#004268",
-                        }} variant="outline-info" href="/work">See All</Button> : null}
+                {/* <JumboComp /> */}
+                <div className="container d-flex justify-content-center" style={{ marginTop: "10%", minWidth: "500px" }}>
+                    <div className="row">
+                        <div className="col-lg-6 col-md-6 col-sm-6" style={{ minWidth: "500px" }}>
+                            <h1 style={{
+                                fontFamily: 'Montserrat, sans-serif',
+                                fontWeight: 700, fontSize: 40, paddingTop: "23%", letterSpacing: "1px"
+                            }}>Hello, <br /> we're Tierney.</h1>
+                            <p style={{ width: "70%", fontFamily: 'Montserrat, sans-serif', fontWeight: 400 }}> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        </div>
+                        <div className="col-lg-6 col-md-6 col-sm-6" style={{ minWidth: "500px" }}>
+                            {this.loadIcon()}
+                        </div>
                     </div>
-
+                </div>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12 d-flex justify-content-end">
+ 
+                                    {this.state.loaded ? <Button className={classes.workButton} variant="outline-info" href="/work">See All</Button> : null}
+                        </div>
+                    </div>
                 </div>
 
                 <HpMission />
@@ -133,4 +163,4 @@ class Home extends Component {
     }
 }
 
-export default Home; 
+export default withStyles(useStyles) (Home); 
