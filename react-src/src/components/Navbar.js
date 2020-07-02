@@ -36,6 +36,8 @@ const useStyles = makeStyles({
         '&:hover': {
             paddingLeft: "70px",
             backgroundColor: "white",
+            color: "#DB2416",          
+
             // color: "#DB2416"
             showArrow: {
                 visibility: "visible", 
@@ -47,7 +49,7 @@ const useStyles = makeStyles({
         width: '100%',
     },
     menu: {
-        fontFamily: 'Montserrat, sans-serif',
+        fontFamily: 'Montserrat, sans-serif !important',
         border: "none",
         fontWeight: 700,
         fontSize: 20,
@@ -132,7 +134,7 @@ export default function NavbarComp() {
 
     return (
         <>
-            <Navbar style={{marginLeft: "-20px", marginTop: 30, display: "inline-block"}}>
+            <Navbar style={{marginLeft: "-25px", marginTop: 30, display: "inline-block"}}>
                 <Navbar.Brand href="/">
                     <img
                         src="https://hellotierney.com/wp-content/uploads/2018/04/Layer-1.gif"

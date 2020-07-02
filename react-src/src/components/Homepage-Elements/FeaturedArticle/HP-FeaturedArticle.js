@@ -67,14 +67,14 @@ const useStyles = makeStyles({
     subtitle: {
         color: "#DB2416",
         fontFamily: 'Montserrat, sans-serif',
-        fontWeight: 700,
+        fontWeight: 600,
     },
     title: {
         fontFamily: 'Montserrat, sans-serif',
-        fontWeight: 700,
+        fontWeight: 600,
         fontSize: 30,
         paddingTop: "5px"
-    }, 
+    },
     actionDiv: {
         // textAlign: "center", 
 
@@ -85,11 +85,11 @@ const useStyles = makeStyles({
         paddingTop: "10px",
         paddingBottom: "10px",
         fontFamily: 'Montserrat, sans-serif',
-        fontWeight: 700,        
+        fontWeight: 700,
         borderRadius: "50px",
         color: "#004268",
         borderColor: "#004268",
-        zIndex: 3, 
+        zIndex: 3,
         top: "-105px",
         '&:hover': {
             backgroundColor: "#004268",
@@ -124,10 +124,9 @@ export default function FeaturedArticle() {
                                 Tierney Diversity Initiatives
                     </Typography>
                             <Typography>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo. &nbsp;
+                                At Tierney, we stand in solidarity with our Black community – our people, our clients, our partners, and our neighbors. <br/><br/>
+                                Our intentional commitment to recognize and reject the persistence of racism in our world has given us the foundation to have an open and meaningful dialogue during what has been an incredibly difficult time for our employees, for the markets we do business in, and for our country. But language alone cannot resolve the failures we have made as a society against fighting systemic racism. We must do better.
+                                &nbsp;
                          <a href="/latest"
                                     style={{
                                         color: "#004268",
@@ -140,12 +139,12 @@ export default function FeaturedArticle() {
             </div>
             {/* <div className="row">
                 <div className="col-12"> */}
-                    <div  className={classes.actionDiv} className="d-flex justify-content-end">
-                        <Button  className={classes.seeAllButton}
-                            variant="outline" href="/latest">See All</Button>
-                    </div>
-                {/* </div> */}
-        {/* //     </div> */}
+            <div className={classes.actionDiv} className="d-flex justify-content-end">
+                <Button className={classes.seeAllButton}
+                    variant="outline" href="/latest">See All</Button>
+            </div>
+            {/* </div> */}
+            {/* //     </div> */}
         </div>
     )
 }

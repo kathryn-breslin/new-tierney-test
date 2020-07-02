@@ -95,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: "120px",
         borderRadius: "50px",
         color: "#004268",
-        borderColor: "#004268",
+        // borderColor: "#004268",
         width: "175px",
         paddingTop: "10px",
         paddingBottom: "10px",
@@ -142,7 +142,7 @@ const useStyles = makeStyles((theme) => ({
     },
     inputField: {
         backgroundColor: "#E0DDD5",
-        width: "250px",
+        width: "260px",
         height: "40px",
         borderRadius: "50px",
         border: "none",
@@ -152,6 +152,10 @@ const useStyles = makeStyles((theme) => ({
         fontSize: 15,
         outline: "none !important",
         outlineOffset: "none !important",
+        // "&:focus": {
+        //     backgroundColor: "white"
+        // }
+
     },
     // submitEmailBtn: {
     //     width: "200px",
@@ -187,8 +191,8 @@ const useStyles = makeStyles((theme) => ({
         bottom: "8px",
         zIndex: 9,
         border: "none",
-        backgroundColor: "#E0DDD5"
-
+        backgroundColor: "#E0DDD5",
+        borderRadius: "50%"
     }
 }));
 
@@ -208,7 +212,7 @@ export default function FooterComponent(props) {
                             <div className={classes.topButtons}>
                                 <Button className={classes.leftButton} variant="light" href="/contact">Contact Us</Button>
                                 <Icon icon={slashForward} height="20" /> <Icon icon={slashForward} height="20" />
-                                <Button className={classes.rightButton} variant="outline-info" href="/careers">Explore Jobs</Button>
+                                <Button className={classes.rightButton} variant="outline-info" href="/careers">Careers</Button>
                             </div>
                         </div>
                     </div>
@@ -283,25 +287,28 @@ export default function FooterComponent(props) {
                                 </div>
                             </form>
                         </div>
-                        <div className="col-lg-3 col-md-3 col-sm-4">
-                            <span className={classes.addresses} style={{ color: "#004153", textDecoration: "underline", fontWeight: 700 }}>Philadelphia</span>
-                            <p className={classes.addresses}>1700 Market St. 29th Floor <br /> Philadelphia, PA 19103 <br />(215) 790-4100</p>
+                        <div style={{ marginLeft: "150px", display: "flex" }}>
+                            <div>
+                                <span className={classes.addresses} style={{ color: "#004153", textDecoration: "underline", fontWeight: 700 }}>Philadelphia</span>
+                                <p className={classes.addresses}>1700 Market St. 29th Floor <br /> Philadelphia, PA 19103 <br />(215) 790-4100</p>
+                            </div>
+
+                            <div style={{ marginLeft: "45px" }}>
+                                <span className={classes.addresses} style={{ color: "#004153", textDecoration: "underline", fontWeight: 700 }}>New York City</span>
+                                <p className={classes.addresses}>100 West 33rd St. 5th Floor <br /> New York, NY 10001 <br />(646) 736-1690</p>
+                            </div>
+                            <div style={{ marginLeft: "45px" }}>
+                                <span className={classes.addresses} style={{ color: "#004153", textDecoration: "underline", fontWeight: 700 }}>Harrisburg</span>
+                                <p className={classes.addresses}>212 Locust St. Suite 400 <br />Harrisburg, PA 17101 <br /> (717) 231-5330</p>
+                            </div>
                         </div>
 
-                        <div className="col-lg-3 col-md-3 col-sm-4">
-                            <span className={classes.addresses} style={{ color: "#004153", textDecoration: "underline", fontWeight: 700 }}>New York City</span>
-                            <p className={classes.addresses}>100 West 33rd St. 5th Floor <br /> New York, NY 10001 <br />(646) 736-1690</p>
-                        </div>
-                        <div className="col-lg-3 col-md-3 col-sm-4">
-                            <span className={classes.addresses} style={{ color: "#004153", textDecoration: "underline", fontWeight: 700 }}>Harrisburg</span>
-                            <p className={classes.addresses}>212 Locust St. Suite 400 <br />Harrisburg, PA 17101 <br /> (717) 231-5330</p>
-                        </div>
                     </div>
                 </div>
 
                 <div className="container" style={{ marginTop: "100px" }}>
                     <div className="row">
-                        <div className="col-5">
+                        <div className="col-4">
                             <h6 style={{ color: "#004153", fontWeight: 700 }}>Follow Us</h6>
                             <div>
                                 <p style={{
@@ -319,18 +326,22 @@ export default function FooterComponent(props) {
                                 <p style={{
                                     display: "inline-block", marginLeft: "10px"
                                 }}><InstagramIcon style={{ color: "#004268", fontSize: 30 }} /></p>
-                                <p style={{ display: "inline-block", marginLeft: "10px" }}>IPG</p>
+                                <p style={{ display: "inline-block", marginLeft: "10px" }}>an IPG Agency</p>
                             </div>
                         </div>
-                        <div className="col-7" style={{ textAlign: "right" }}>
-                            <p style={{ display: "inline-block" }}><br />Copyright 2020 Tierney | Privacy &amp; Terms </p>
-                            <img
-                                src="https://hellotierney.com/wp-content/uploads/2018/04/Layer-1.gif"
-                                width="100"
-                                className="d-inline-block align-top"
-                                alt="Tierney logo"
-                                style={{ display: "inline-block", marginLeft: "10px", marginTop: "-5px" }}></img>
+                        <div className="col-8">
+                            <div className="p-2" style={{ textAlign: "right" }}>
+                                <p style={{ display: "inline-block", marginRight: "20px" }}><br />Copyright 2020 Tierney | Privacy &amp; Terms </p>
+
+                                <img
+                                    src="https://hellotierney.com/wp-content/uploads/2018/04/Layer-1.gif"
+                                    width="100"
+                                    className="d-inline-block align-top"
+                                    alt="Tierney logo"
+                                    style={{ display: "inline-block", marginLeft: "10px", marginTop: "-5px" }}></img>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>

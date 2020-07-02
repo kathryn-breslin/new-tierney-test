@@ -23,7 +23,7 @@ const useStyles = makeStyles({
         textAlign: "center !important",
         margin: "0 auto",
         fontFamily: 'Montserrat, sans-serif',
-        fontWeight: 700,
+        fontWeight: 800,
         fontSize: 35,
     }
     ,
@@ -37,7 +37,7 @@ const useStyles = makeStyles({
         paddingTop: "10px",
         paddingBottom: "10px",
         fontFamily: 'Montserrat, sans-serif',
-        fontWeight: 700,
+        fontWeight: 800,
         '&:hover': {
             backgroundColor: "#004268",
             color: "white",
