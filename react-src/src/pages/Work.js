@@ -13,8 +13,9 @@ import axios from "axios";
 const useStyles = theme => ({
     headerDiv: {
         backgroundColor: "#004268",
-        height: "200px", 
-        color: "white"
+        height: "200px",
+        color: "white",
+        alignItems: "center",
     }
 });
 class Work extends Component {
@@ -53,16 +54,32 @@ class Work extends Component {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-12">
-                                        <p>Work</p>
-                                        <h1>Our Work</h1>
+                                        <div style={{marginTop: "30px"}}>
+                                            <p>Work</p>
+                                            <h1>Our Work</h1>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div >
-                <HeaderStatement/>
-                <Articles/>
+                <HeaderStatement />
+                <Articles />
+                <div className="container-fluid" style={{ backgroundColor: "#F6F5F3" }}>
+                    <div className="row">
+                        <div className="col-12">
+                            <div style={{ justifyContent: "center", display: "flex", height: "75px", alignItems: "center" }}>
+                                <a href="/latest"
+                                    style={{
+                                        color: "#004268",
+                                        textDecoration: "underline",
+                                    }}>Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <HeaderStatement />
                 <HpFooter />
             </div >
 

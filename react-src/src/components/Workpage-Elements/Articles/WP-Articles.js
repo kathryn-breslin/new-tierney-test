@@ -170,14 +170,13 @@ export default function FeaturedArticle() {
                     <Card className={classes.cardArticle}>
                         <CardContent>
                             <Typography className={classes.subtitle}>
-                                Culture
+                                Brand Name
                     </Typography>
                             <Typography className={classes.title}>
-                                Tierney Diversity Initiatives
+                                Short Messaging Statement About the Project
                     </Typography>
                             <Typography>
-                                At Tierney, we stand in solidarity with our Black community – our people, our clients, our partners, and our neighbors. <br /><br />
-                                Our intentional commitment to recognize and reject the persistence of racism in our world has given us the foundation to have an open and meaningful dialogue during what has been an incredibly difficult time for our employees, for the markets we do business in, and for our country. But language alone cannot resolve the failures we have made as a society against fighting systemic racism. We must do better.
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
                                 &nbsp;
                          <a href="/latest"
                                     style={{
@@ -209,14 +208,13 @@ export default function FeaturedArticle() {
                     <Card className={classes.cardArticleRight}>
                         <CardContent>
                             <Typography className={classes.subtitle}>
-                                Culture
+                                Brand Name
                     </Typography>
                             <Typography className={classes.title}>
-                                Tierney Diversity Initiatives
+                                Short Messaging Statement About the Project
                     </Typography>
                             <Typography>
-                                At Tierney, we stand in solidarity with our Black community – our people, our clients, our partners, and our neighbors. <br /><br />
-                                Our intentional commitment to recognize and reject the persistence of racism in our world has given us the foundation to have an open and meaningful dialogue during what has been an incredibly difficult time for our employees, for the markets we do business in, and for our country. But language alone cannot resolve the failures we have made as a society against fighting systemic racism. We must do better.
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
                                 &nbsp;
                          <a href="/latest"
                                     style={{
@@ -245,14 +243,13 @@ export default function FeaturedArticle() {
                     <Card className={classes.cardArticle}>
                         <CardContent>
                             <Typography className={classes.subtitle}>
-                                Culture
+                                Brand Name
                     </Typography>
                             <Typography className={classes.title}>
-                                Tierney Diversity Initiatives
+                                Short Messaging Statement About the Project
                     </Typography>
                             <Typography>
-                                At Tierney, we stand in solidarity with our Black community – our people, our clients, our partners, and our neighbors. <br /><br />
-                                Our intentional commitment to recognize and reject the persistence of racism in our world has given us the foundation to have an open and meaningful dialogue during what has been an incredibly difficult time for our employees, for the markets we do business in, and for our country. But language alone cannot resolve the failures we have made as a society against fighting systemic racism. We must do better.
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
                                 &nbsp;
                          <a href="/latest"
                                     style={{
