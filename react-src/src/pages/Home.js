@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Button from 'react-bootstrap/Button'
 import Navbar from "../components/Navbar";
-import JumboComp from "../components/Jumbotron";
 import HpWorkSection from "../components/Homepage-Elements/WorkSection/HP-WorkSection.js";
 import HpMission from "../components/Homepage-Elements/MissionStatement/HP-Mission.js";
 import HpFeaturedArticle from "../components/Homepage-Elements/FeaturedArticle/HP-FeaturedArticle.js";
@@ -195,16 +194,18 @@ class Home extends Component {
                 >
                     <Modal.Header closeButton>
                         <Modal.Title id="contained-modal-title-vcenter">
-                        Lorem Ipsum
-                    {console.log("Modal component")}
+                            <img
+                                src="https://hellotierney.com/wp-content/uploads/2018/04/Layer-1.gif"
+                                width="100"
+                                className="d-inline-block align-top"
+                                alt="Tierney logo"
+                                style={{ display: "inline-block", marginLeft: "10px", marginTop: "-5px" }}></img>
                         </Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>
-                        {/* <h4>Lorem Ipsum</h4> */}
+                    <Modal.Body style={{textAlign: "center"}}>
+                        <h4>Welcome to Tierney! </h4>
                         <p>
-                            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                            consectetur ac, vestibulum at eros.
+                            You will recieve a confirmation email at <span style={{ fontWeight: 700 }}>{this.state.userEmail}</span> shortly.
                     </p>
                     </Modal.Body>
                     <Modal.Footer>
@@ -234,7 +235,8 @@ class Home extends Component {
 
     closeModalFunction() {
         this.setState({
-            show: false
+            show: false,
+            userEmail: ""
         })
     }
 
